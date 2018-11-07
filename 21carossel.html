@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="pt-br"><!--linguagem-->
+<head>
+<meta charset="utf-8"> <!--charset cadeia de caracteres-->
+<meta name="viewport" content="width-device-width, initial-scale = 1, shrink-to-fit=no">
+<!--content= a largura vai ser igual a largura do dispositivo,intial-scale= escala de zooom inicial,shrink-to-fit = nao vai encolher em relaçao ao conteudo-->
+<title>Botoes</title><!---->
+<!--Instalacao via download-->
+<link rel="stylesheet" href="css/bootstrap.min.css" > 
+<!--style para css-->	
+<style type="text/css"> 
+	div.bg{
+	background-color:#563d7c;	
+	height: auto;	
+	border: 1px solid #FFFFFF;
+	padding: 10px 0;
+	}
+	div.bg1{
+	background-color:#FF0004;	
+	height: 50px;	
+	border: 1px solid #FFFFFF;
+	
+	}
+	.card{margin-bottom: 30px} 
+</style>	
+</head>	<!--CSS um espaco entre os cards no bottom-->
+
+<!--nao há borda no boostrap, foi definida em branco no style-->	
+	
+<body>
+	<!--fluid pega tela inteira-->
+	<div class="container-fluid"> 
+		<div class="row"><!--row = linha-->
+			<div class="col bg"> <!--col = coluna-->
+			
+			</div>
+			
+			<div class="col-10 bg">
+				<div id="controleCarrossel" class="carousel slide" data-ride="carousel">
+					<ol class="carousel-indicators"> <!--lista ordenada com os indicators para escolher qual imagem ir-->
+						<li data-target="#controleCarrossel" data-slide-to="0" class="active"></li><!--data-target(alvo)=id, data-slide-to=qual imagem-->
+						<li data-target="#controleCarrossel" data-slide-to="1"></li>
+						<li data-target="#controleCarrossel" data-slide-to="2"></li>
+					</ol>
+					<div class="carousel-inner">
+						<div class="carousel-item active"><!--sera a primeira imagem do carousel (active)-->
+							<img class="d-block w-100" src="imagens/alterar.bmp"><!-- w-100=width 100% -->
+							<div class="carousel-caption d-none d-md-block">
+								<h3>Primeiro Título do meu Slide</h3>
+								<p>Subtítulo do meu slide</p>
+							</div>
+						</div>
+						<div class="carousel-item">
+							<img class="d-block w-100" src="imagens/deletar.bmp">
+							<div class="carousel-caption d-none d-md-block">
+								<h3>Segundo Título do meu Slide</h3>
+								<p>Subtítulo do meu slide</p>
+							</div>
+						</div>
+						<div class="carousel-item">
+							<img class="d-block w-100" src="imagens/formatura.jpeg">
+							<div class="carousel-caption d-none d-md-block">
+								<h3>Terceiro Título do meu Slide</h3>
+								<p>Subtítulo do meu slide</p>
+							</div>
+						</div>
+					</div>	<!--#controleCarrossel pegando do id="controleCarrosssel , se nao colocar id nao avanca ou volta as imagens"-->
+					<a href="#controleCarrossel" class="carousel-control-prev" role="button" data-slide="prev">
+						<span class="carousel-control-prev-icon" aria-hidden="true"></span><!--tecnologia assistiva=aria-hidden-->
+						<span class="sr-only">Voltar</span><!--tecnologia assistiva-->
+					</a>
+					<a href="#controleCarrossel" class="carousel-control-next" role="button" data-slide="next">
+						<span class="carousel-control-next-icon" aria-hidden="true"></span><!--tecnologia assistiva=aria-hidden-->
+						<span class="sr-only">Avançar</span><!--tecnologia assistiva-->
+					</a>
+				</div>
+				
+						
+			</div>
+				
+			
+			
+			<div class="col bg">
+			
+			</div>
+	
+		
+		</div>
+	</div>	
+	
+		
+<!--a sequencia importa primeiro jquery, depois popper, depois o bootstrap-->
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+	<!--script para mexer no javascript e modificar a velocidade do carousel-->
+<script> 
+	$('.carousel').carousel({
+		interval: 80
+	})
+</script>	
+	
+</body>
+</html>

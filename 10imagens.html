@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="pt-br"><!--linguagem-->
+<head>
+<meta charset="utf-8"> <!--charset cadeia de caracteres-->
+<meta name="viewport" content="width-device-width, initial-scale = 1, shrink-to-fit=no">
+<!--content= a largura vai ser igual a largura do dispositivo,intial-scale= escala de zooom inicial,shrink-to-fit = nao vai encolher em relaçao ao conteudo-->
+<title>Imagens</title>
+<!--Instalacao via download-->
+<link rel="stylesheet" href="css/bootstrap.min.css" > 
+<!--style para css-->	
+<style type="text/css"> 
+	div.bg{
+	background-color:#563d7c;		
+	border: 1px solid #FFFFFF;
+	
+	}
+</style>	
+</head>
+
+<!--nao há borda no boostrap, foi definida em branco no style-->	
+	
+<body>
+
+	<div class="container"><!--container sem preencher tela inteira-->
+		<div class="row">
+			<div class="col-1 bg">
+			</div>
+			
+				<div class="col-10 bg">
+					<!--Imagem fluida //imagem responsiva class="img-fluid"-->
+					<img title="Imagem responsiva" src="imagens/salvar.bmp" class="img-fluid">
+					
+					<br><br>
+					<!--imagem fica com uma borda, tbm ja responsiva-->
+					<img src="imagens/deletar.bmp" class="img-thumbnail">
+
+					<br><br>
+					<!--alinhando imagem a esquerda-->
+					<img src="imagens/novo.bmp" class="img-fluid float-left">
+					
+					<br><br>
+					<!--responsiva, alinhando a direita, cantos arredondados-->
+					<img src="imagens/alterar.bmp" class="img-fluid float-right rounded">
+					
+					<br><br>
+					
+					<div class="row">
+							<div class="col">
+								<!--responsiva, canto arredondado, alinhando ao centro(mx-auto d-block)-->
+								<img src="imagens/zip.png" class="img-fluid rounded mx-auto d-block">
+							</div>
+						</div>
+					
+				</div>
+						
+					
+				
+			
+			<div class="col-1 bg">
+			</div>
+			
+	
+		</div>
+	</div>
+	
+	
+<!--a sequencia importa primeiro jquery, depois popper, depois o bootstrap-->
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+</body>
+</html>

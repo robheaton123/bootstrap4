@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="pt-br"><!--linguagem-->
+<head>
+<meta charset="utf-8"> <!--charset cadeia de caracteres-->
+<meta name="viewport" content="width-device-width, initial-scale = 1, shrink-to-fit=no">
+<!--content= a largura vai ser igual a largura do dispositivo,intial-scale= escala de zooom inicial,shrink-to-fit = nao vai encolher em relaçao ao conteudo-->
+<title>Grid</title>
+<!--Instalacao via download-->
+<link rel="stylesheet" href="css/bootstrap.min.css" > 
+<!--style para css-->	
+<style type="text/css"> 
+	div.bg{
+	background-color:#563d7c;	
+	/*height: 50px;	*/
+	border: 1px solid #FFFFFF;
+	
+	}
+</style>	
+</head>
+
+<!--nao há borda no boostrap, foi definida em branco no style-->	
+	
+<body>
+
+		<div class="container"><!--container sem preencher tela inteira-->
+		<div class="row">
+			<div class="col-1 bg">
+			
+			</div>
+	
+			<div class="col-10 bg">
+				
+				<h1>h1. Bootstrap heading</h1>
+				<h2>h2. Bootstrap heading</h2>
+				<h3>h3. Bootstrap heading</h3>
+				<h4>h4. Bootstrap heading</h4>
+				<h5>h5. Bootstrap heading</h5>
+				<h6>h6. Bootstrap heading</h6>
+
+				<br><br>
+				
+				<p class="h1">h1. Bootstrap heading</p>
+				<p class="h2">h2. Bootstrap heading</p>
+				<p class="h3">h3. Bootstrap heading</p>
+				<p class="h4">h4. Bootstrap heading</p>
+				<p class="h5">h5. Bootstrap heading</p>
+				<p class="h6">h6. Bootstrap heading</p>
+				
+				<br><br>
+				<!--texto com subtitulo-->
+				<h3>
+				  Título de exibição normal
+				  <small class="text-muted">Com texto secundário desbotado</small>
+				</h3>
+				
+				<br><br>
+				<h1 class="display-1">Display 1</h1>
+				<h1 class="display-2">Display 2</h1>
+				<h1 class="display-3">Display 3</h1>
+				<h1 class="display-4">Display 4</h1>
+				
+				<br><br>
+				<!--classe com paragrafo usar classe .lead-->
+				<p class="lead">
+				  Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus.
+				</p>
+				
+				<br><br>
+				
+				<!--elementos comuns do html-->
+				<p>Você pode usar a <mark>marca</mark> para realçar o texto.</p>
+				<p><del>Esta linha de texto deve ser tratada como texto excluído.</del></p>
+				<p><s>Esta linha de texto deve ser tratada como texto não utilizado.</s></p>
+				<p><ins>Esta linha de texto deve ser tratada como algo além do documento.</ins></p>
+				<p><u>Esta linha de texto será renderizada como sublinhada</u></p>
+				<p><small>Esta linha de texto deve ser tratada como impressão fina.</small></p>
+				<p><strong>Esta linha foi processada como texto em negrito.</strong></p>
+				<p><em>Esta linha foi processada em um texto itálico.</em></p>
+				
+				<!--abreviacoes //Adicione a classe .initialism  a uma abreviatura para obter uma tamanho de letra um pouco menor.-->
+				<p><abbr title="Brasil">BR</abbr></p>
+				<p><abbr title="HyperText Markup Language" class="initialism">HTML</abbr></p>
+				
+				
+				<br><br>
+				<!--Adicione .blockquote-reverse para um blockquote com conteúdo alinhado à direita.-->
+				<blockquote class="blockquote text-right">
+				  <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+				  <footer class="blockquote-footer">Uma citação famosa no<cite title="Titulo do Código">Título do Código</cite></footer>
+				</blockquote>
+				
+				<br><br>
+				<!--Unstyled
+
+Remova o estilo e a margem esquerda nos itens da lista (apenas nos filhos imediatos), o que significa que você precisará adicionar a classe para todas as listas aninhadas também.-->
+				<ul class="list-unstyled">
+				  <li>Lorem ipsum dolor sit amet</li>
+				  <li>Consectetur adipiscing elit</li>
+				  <li>Integer molestie lorem at massa</li>
+				  <li>Facilisis in pretium nisl aliquet</li>
+				  <li>Nulla volutpat aliquam velit
+					<ul>
+					  <li>Phasellus iaculis neque</li>
+					  <li>Purus sodales ultricies</li>
+					  <li>Vestibulum laoreet porttitor sem</li>
+					  <li>Ac tristique libero volutpat at</li>
+					</ul>
+				  </li>
+				  <li>Faucibus porta lacus fringilla vel</li>
+				  <li>Aenean sit amet erat nunc</li>
+				  <li>Eget porttitor lorem</li>
+				</ul>
+				
+				
+			
+			<br><br>
+			<!--Inline (em linha)
+
+Remove os bullets da lista e aplica uma margem com a combinação de duas classes .list-inline e .list-inline-item.-->	
+			<ul class="list-inline">
+			  <li class="list-inline-item">Lorem ipsum</li>
+			  <li class="list-inline-item">Phasellus iaculis</li>
+			  <li class="list-inline-item">Nulla volutpat</li>
+			</ul>	
+				
+				
+			</div>
+	
+			<div class="col-1 bg">
+			
+			</div>
+			
+	
+		</div>
+	</div>
+	
+	
+<!--a sequencia importa primeiro jquery, depois popper, depois o bootstrap-->
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+</body>
+</html>

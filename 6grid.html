@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="pt-br"><!--linguagem-->
+<head>
+<meta charset="utf-8"> <!--charset cadeia de caracteres-->
+<meta name="viewport" content="width-device-width, initial-scale = 1, shrink-to-fit=no">
+<!--content= a largura vai ser igual a largura do dispositivo,intial-scale= escala de zooom inicial,shrink-to-fit = nao vai encolher em relaçao ao conteudo-->
+<title>Grid</title>
+<!--Instalacao via download-->
+<link rel="stylesheet" href="css/bootstrap.min.css" > 
+<!--style para css-->	
+<style type="text/css"> 
+	div.bg{
+	background-color:#563d7c;	
+	height: 50px;	
+	border: 1px solid #FFFFFF;
+	
+	}
+	div.bg1{
+	background-color:#FF0004;	
+	height: 50px;	
+	border: 1px solid #FFFFFF;
+	
+	}
+</style>	
+</head>
+
+<!--nao há borda no boostrap, foi definida em branco no style-->	
+	
+<body>
+	<!--fluid pega tela inteira-->
+	<div class="container-fluid"> 
+		<div class="row"><!--row = linha-->
+			<div class="col bg"> <!--col = coluna-->
+			
+			</div>
+	
+			<div class="col bg">
+			
+			</div>
+	
+			<div class="col bg">
+			
+			</div>
+			
+			<div class="col bg">
+			
+			</div>
+	
+		</div>
+	</div>	
+	
+		<div class="container"><!--container sem preencher tela inteira-->
+		<div class="row">
+			<div class="col bg">
+			
+			</div>
+	
+			<div class="col bg">
+			
+			</div>
+	
+			<div class="col bg">
+			
+			</div>
+			
+			<div class="col bg">
+			
+			</div>
+	
+		</div>
+	</div>
+	
+	<div class="row">
+			<div class="col-6 bg"><!--coluna tamanho 6-->
+			
+			</div>
+
+			<div class="col bg">
+			
+			</div>
+			
+			<div class="col bg">
+			
+			</div>
+	
+	</div>
+	
+	<div class="row">
+			<div class="col-1 bg">
+			
+			</div>
+
+			<div class="col bg">
+			
+			</div>
+			
+			<div class="col bg">
+			
+			</div>
+	
+	</div>
+
+	<div class="row"><!--possibilidade de ao inves de usar as 12 colunas do boostrap usar menos, note que elas irao faltar -->
+			<div class="col-1 bg">
+			
+			</div>
+
+			<div class="col-7 bg">
+			
+			</div>
+			
+			<div class="col-2 bg">
+			
+			</div>
+	
+	</div>	
+<!--bootstrap 4 nova forma de alinhamento, alinhando ao centro-->
+	<div class="row justify-content-center">
+			<div class="col-3 bg">
+			
+			</div>
+
+			<div class="col-3 bg">
+			
+			</div>
+			
+			<div class="col-3 bg">
+			
+			</div>
+	
+	</div>	
+	
+	<!--bootstrap 4 nova forma de alinhamento, alinhando a direita-->
+	<div class="row justify-content-end">
+			<div class="col-3 bg">
+			
+			</div>
+
+			<div class="col-3 bg">
+			
+			</div>
+			
+			<div class="col-3 bg">
+			
+			</div>
+	
+	</div>
+	<!--lg tamanha da coluna large, md medium-->
+	<!--quando a resolucao estiver media col-md-4 >= 992px, quando o viewport estiver grande vai para col-lg-12 >=1200px-->
+	<div class="row">
+			<div class="col-lg-4 col-md-12 bg1">
+			
+			</div>
+
+			<div class="col-lg-4 col-md-12 bg1">
+			
+			</div>
+			
+			<div class="col-lg-4 col-md-12 bg1">
+			
+			</div>
+	
+	</div>
+			<!--lembrando que o order das colunas vai de 1 a 12-->
+		<div class="row">
+			<div class="col-lg-4 col-md-12 bg1">
+				<h1>Primeiro ITEM</h1>
+			</div>
+
+			<div class="col-lg-4 col-md-12 order-3 bg1">
+				<h1>Segundo ITEM</h1>
+			</div>
+			
+			<div class="col-lg-4 col-md-12 order-2 bg1">
+				<h1>Terceiro ITEM</h1>
+			</div>
+	
+	</div>
+<!--a sequencia importa primeiro jquery, depois popper, depois o bootstrap-->
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+</body>
+</html>

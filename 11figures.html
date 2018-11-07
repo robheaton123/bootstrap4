@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="pt-br"><!--linguagem-->
+<head>
+<meta charset="utf-8"> <!--charset cadeia de caracteres-->
+<meta name="viewport" content="width-device-width, initial-scale = 1, shrink-to-fit=no">
+<!--content= a largura vai ser igual a largura do dispositivo,intial-scale= escala de zooom inicial,shrink-to-fit = nao vai encolher em relaçao ao conteudo-->
+<title>Figures</title>
+<!--Instalacao via download-->
+<link rel="stylesheet" href="css/bootstrap.min.css" > 
+<!--style para css-->	
+<style type="text/css"> 
+	div.bg{
+	background-color:#563d7c;	
+	height: auto;	
+	border: 1px solid #FFFFFF;
+	padding: 10px 0;
+	}
+	div.bg1{
+	background-color:#FF0004;	
+	height: 50px;	
+	border: 1px solid #FFFFFF;
+	
+	}
+</style>	
+</head>
+
+<!--nao há borda no boostrap, foi definida em branco no style-->	
+	
+<body>
+	<!--fluid pega tela inteira-->
+	<div class="container-fluid"> 
+		<div class="row"><!--row = linha-->
+			<div class="col bg"> <!--col = coluna-->
+			
+			</div>
+	
+			<div class="col-10 bg">
+				
+				<figure class="figure">
+				  <img src="imagens/formatura.jpeg" width="800px" height="600px" class="figure-img img-fluid rounded" alt="Uma imagem de espaço reservado quadrada, genérica e com cantos arredondados.">
+				  <figcaption class="figure-caption">Uma legenda para a imagem acima.</figcaption>
+				</figure>		
+				
+				<br><br>
+				
+				<figure class="figure">
+				  <img src="imagens/formatura.jpeg" width="800px" height="600px" class="figure-img img-fluid rounded" alt="Uma imagem de espaço reservado quadrada, genérica e com cantos arredondados.">
+				  <figcaption class="figure-caption text-right">Uma legenda para a imagem acima.</figcaption>
+				</figure>
+						
+			</div>
+			
+			<div class="col bg">
+			
+			</div>
+	
+		</div>
+	</div>	
+	
+		
+<!--a sequencia importa primeiro jquery, depois popper, depois o bootstrap-->
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="pt-br"><!--linguagem-->
+<head>
+<meta charset="utf-8"> <!--charset cadeia de caracteres-->
+<meta name="viewport" content="width-device-width, initial-scale = 1, shrink-to-fit=no">
+<!--content= a largura vai ser igual a largura do dispositivo,intial-scale= escala de zooom inicial,shrink-to-fit = nao vai encolher em relaçao ao conteudo-->
+<title>Botoes</title><!---->
+<!--Instalacao via download-->
+<link rel="stylesheet" href="css/bootstrap.min.css" > 
+<!--style para css-->	
+<style type="text/css"> 
+	div.bg{
+	background-color:#563d7c;	
+	height: auto;	
+	border: 1px solid #FFFFFF;
+	padding: 10px 0;
+	}
+	div.bg1{
+	background-color:#FF0004;	
+	height: 50px;	
+	border: 1px solid #FFFFFF;
+	
+	}
+</style>	
+</head>
+
+<!--nao há borda no boostrap, foi definida em branco no style-->	
+	
+<body>
+	<!--fluid pega tela inteira-->
+	<div class="container-fluid"> 
+		<div class="row"><!--row = linha-->
+			<div class="col bg"> <!--col = coluna-->
+			
+			</div>
+			
+			<div class="col-10 bg">
+				<!--btn=classe bootstrap,btn-primary=estilo do btn-->
+				<button class="btn btn-primary">Primário</button>
+				<!--role=dizendo que o link é um button (semantica)-->
+				<a href="#" class="btn btn-secondary" role="button">Secundário</a>
+				<input type="button" class="btn btn-success" value="Sucesso">
+				<input type="submit" class="btn btn-danger" value="Danger">
+				<input type="reset" class="btn btn-warning" value="Reset">
+				<button class="btn btn-info">Info</button>
+				<button class="btn btn-light">Light</button>
+				<button class="btn btn-dark">Dark</button>
+				<button class="btn btn-link">LINK</button>
+				<hr>
+				<!--btn=classe bootstrap,btn-primary=estilo do btn-->
+				<button class="btn btn-outline-primary">Primário</button>
+				<!--role=dizendo que o link é um button (semantica)-->
+				<a href="#" class="btn btn-outline-secondary" role="button">Secundário</a>
+				<input type="button" class="btn btn-outline-success" value="Sucesso">
+				<input type="submit" class="btn btn-outline-danger" value="Danger">
+				<input type="reset" class="btn btn-outline-warning" value="Reset">
+				<button class="btn btn-outline-info">Info</button>
+				<button class="btn btn-outline-light">Light</button>
+				<button class="btn btn-outline-dark">Dark</button>
+				<button class="btn btn-outline-link">LINK</button>
+				<hr>
+				<!--btn=classe bootstrap,btn-primary=estilo do btn-->
+				<button class="btn btn-outline-primary btn-lg">Primário</button>
+				<!--btn-lg=large,btn-sm=small-->
+				
+				<a href="#" class="btn btn-outline-secondary btn-sm" role="button">Secundário</a>
+				<input type="button" class="btn btn-outline-success" value="Sucesso">
+				<input type="submit" class="btn btn-outline-danger" value="Danger">
+				<input type="reset" class="btn btn-outline-warning" value="Reset">
+				<button class="btn btn-outline-info">Info</button>
+				<button class="btn btn-outline-light">Light</button>
+				<button class="btn btn-outline-dark">Dark</button>
+				<button class="btn btn-outline-link">LINK</button>
+				<hr>
+				<!--o btn-block ira preencher toda largura-->
+				<button class="btn btn-dark btn-block">Dark</button>
+				<hr>
+				<!--Estado dos botoes-->
+				<button class="btn btn-dark">Dark</button><!--normal-->
+				<button class="btn btn-dark active">Dark</button><!--ativo-->
+				<button class="btn btn-dark" disabled>Dark</button><!--desabilitado-->
+				<hr>
+				<!--aria-disabled=tecnologia assistiva //desabilitando link-->
+				<a href="#" class="btn btn-danger disabled" role="button" aria-disabled="true">Primário</a>
+				<hr>
+					<div class="btn-group" role="group" aria-label="Exemplo">
+					<button class="btn btn-dark">Dark</button><!--normal-->
+					<button class="btn btn-dark">Dark</button><!--normal-->
+					<button class="btn btn-dark">Dark</button><!--normal-->	
+					</div>
+			</div>
+			
+			<div class="col bg">
+			
+			</div>
+	
+		</div>
+	</div>	
+	
+		
+<!--a sequencia importa primeiro jquery, depois popper, depois o bootstrap-->
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+</body>
+</html>

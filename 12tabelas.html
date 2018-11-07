@@ -1,0 +1,447 @@
+<!doctype html>
+<html lang="pt-br"><!--linguagem-->
+<head>
+<meta charset="utf-8"> <!--charset cadeia de caracteres-->
+<meta name="viewport" content="width-device-width, initial-scale = 1, shrink-to-fit=no">
+<!--content= a largura vai ser igual a largura do dispositivo,intial-scale= escala de zooom inicial,shrink-to-fit = nao vai encolher em relaçao ao conteudo-->
+<title>Tabelas</title>
+<!--Instalacao via download-->
+<link rel="stylesheet" href="css/bootstrap.min.css" > 
+<!--style para css-->	
+<style type="text/css"> 
+	div.bg{
+	background-color:#563d7c;	
+	height: auto;	
+	border: 1px solid #FFFFFF;
+	padding: 10px 0;
+	}
+	div.bg1{
+	background-color:#FF0004;	
+	height: 50px;	
+	border: 1px solid #FFFFFF;
+	
+	}
+</style>	
+</head>
+
+<!--nao há borda no boostrap, foi definida em branco no style-->	
+	
+<body>
+	<!--fluid pega tela inteira-->
+	<div class="container-fluid"> 
+		<div class="row"><!--row = linha-->
+			<div class="col bg"> <!--col = coluna-->
+			
+			</div>
+	
+			<div class="col-10 bg">
+				<table class="table-danger">	
+					<thead><!--cabecalho das colunas-->
+						<tr>
+							<th>N°</th><!--info cabecalho da coluna-->
+							<th>Primeiro Nome</th>
+							<th>Sobreonme</th>
+							<th>Nome de Usuário</th>
+						</tr>
+					</thead>
+					<tbody><!--dados do corpo da tabela-->
+						<tr>
+							<th scope="row">1</th>
+							<td>Emerson</td>
+							<td>Batista</td>
+							<td>Mario</td>
+						</tr>
+						<tr>
+							<th scope="row">2</th>
+							<td>de Almeida</td>
+							<td>Tevez</td>
+							<td>do Pulo</td>
+						</tr>
+							<th scope="row">3</th>
+							<td>Emer12</td>
+							<td>BatistaBolado</td>
+							<td>MarioTenis</td>						<tr>			
+						</tr>
+					</tbody>
+				</table>	
+				<br><br>
+				<table class="table table-inverse">	<!--cor inversa-->
+					<thead><!--cabecalho das colunas-->
+						<tr>
+							<th>N°</th><!--info cabecalho da coluna-->
+							<th>Primeiro Nome</th>
+							<th>Sobreonme</th>
+							<th>Nome de Usuário</th>
+						</tr>
+					</thead>
+					<tbody><!--dados do corpo da tabela-->
+						<tr>
+							<th scope="row">1</th>
+							<td>Emerson</td>
+							<td>Batista</td>
+							<td>Mario</td>
+						</tr>
+						<tr>
+							<th scope="row">2</th>
+							<td>de Almeida</td>
+							<td>Tevez</td>
+							<td>do Pulo</td>
+						</tr>
+						<tr>
+							<th scope="row">3</th>
+							<td>Emer12</td>
+							<td>BatistaBolado</td>
+							<td>MarioTenis</td>									
+						</tr>
+					</tbody>
+				</table>
+				<br><br>
+				<table class="table">	<!--cor inversa-->
+					<thead class="thead-inverse"><!--cabecalho das colunas-->
+						<tr>
+							<th>N°</th><!--info cabecalho da coluna-->
+							<th>Primeiro Nome</th>
+							<th>Sobreonme</th>
+							<th>Nome de Usuário</th>
+						</tr>
+					</thead>
+					<tbody><!--dados do corpo da tabela-->
+						<tr>
+							<th scope="row">1</th>
+							<td>Emerson</td>
+							<td>Batista</td>
+							<td>Mario</td>
+						</tr>
+						<tr>
+							<th scope="row">2</th>
+							<td>de Almeida</td>
+							<td>Tevez</td>
+							<td>do Pulo</td>
+						</tr>
+						<tr>
+							<th scope="row">3</th>
+							<td>Emer12</td>
+							<td>BatistaBolado</td>
+							<td>MarioTenis</td>									
+						</tr>
+					</tbody>
+				</table>
+				<br><br>
+				<table class="table table-striped table-inverse"><!--striped uma cor sim e nao-->
+					<thead><!--cabecalho das colunas-->
+						<tr>
+							<th>N°</th><!--info cabecalho da coluna-->
+							<th>Primeiro Nome</th>
+							<th>Sobreonme</th>
+							<th>Nome de Usuário</th>
+						</tr>
+					</thead>
+					<tbody><!--dados do corpo da tabela-->
+						<tr>
+							<th scope="row">1</th>
+							<td>Emerson</td>
+							<td>Batista</td>
+							<td>Mario</td>
+						</tr>
+						<tr>
+							<th scope="row">2</th>
+							<td>de Almeida</td>
+							<td>Tevez</td>
+							<td>do Pulo</td>
+						</tr>
+						<tr>
+							<th scope="row">3</th>
+							<td>Emer12</td>
+							<td>BatistaBolado</td>
+							<td>MarioTenis</td>	
+						</tr>	
+					</tbody>
+				</table>
+				<br><br>
+				<table class="table table-bordered table table-inverse"><!--tabela com borda-->
+					<thead><!--cabecalho das colunas-->
+						<tr>
+							<th>N°</th><!--info cabecalho da coluna-->
+							<th>Primeiro Nome</th>
+							<th>Sobreonme</th>
+							<th>Nome de Usuário</th>
+						</tr>
+					</thead>
+					<tbody><!--dados do corpo da tabela-->
+						<tr>
+							<th scope="row">1</th>
+							<td>Emerson</td>
+							<td>Batista</td>
+							<td>Mario</td>
+						</tr>
+						<tr>
+							<th scope="row">2</th>
+							<td>de Almeida</td>
+							<td>Tevez</td>
+							<td>do Pulo</td>
+						</tr>
+						<tr>
+							<th scope="row">3</th>
+							<td>Emer12</td>
+							<td>BatistaBolado</td>
+							<td>MarioTenis</td>									
+						</tr>
+					</tbody>
+				</table>
+				<br><br>
+				<table class="table table-inverse table-striped table-hover">	<!--cor inversa,cor sim e nao, hover ao passar o mouse-->
+					<thead><!--cabecalho das colunas-->
+						<tr>
+							<th>N°</th><!--info cabecalho da coluna-->
+							<th>Primeiro Nome</th>
+							<th>Sobreonme</th>
+							<th>Nome de Usuário</th>
+						</tr>
+					</thead>
+					<tbody><!--dados do corpo da tabela-->
+						<tr>
+							<th scope="row">1</th>
+							<td>Emerson</td>
+							<td>Batista</td>
+							<td>Mario</td>
+						</tr>
+						<tr>
+							<th scope="row">2</th>
+							<td>de Almeida</td>
+							<td>Tevez</td>
+							<td>do Pulo</td>
+						</tr>
+						<tr>
+							<th scope="row">3</th>
+							<td>Emer12</td>
+							<td>BatistaBolado</td>
+							<td>MarioTenis</td>									
+						</tr>
+					</tbody>
+				</table>
+				<br><br>
+				<table class="table table-inverse table-striped table-hover">	<!--cor inversa,cor sim e nao, hover ao passar o mouse-->
+					<thead><!--cabecalho das colunas-->
+						<tr>
+							<th>N°</th><!--info cabecalho da coluna-->
+							<th>Primeiro Nome</th>
+							<th>Sobreonme</th>
+							<th>Nome de Usuário</th>
+						</tr>
+					</thead>
+					<tbody><!--dados do corpo da tabela-->
+						<tr>
+							<th scope="row">1</th>
+							<td>Emerson</td>
+							<td>Batista</td>
+							<td>Mario</td>
+						</tr>
+						<tr>
+							<th scope="row">2</th>
+							<td>de Almeida</td>
+							<td>Tevez</td>
+							<td>do Pulo</td>
+						</tr>
+						<tr>
+							<th scope="row">3</th>
+							<td>Emer12</td>
+							<td>BatistaBolado</td>
+							<td>MarioTenis</td>									
+						</tr>
+					</tbody>
+				</table>
+				<br><br>
+			
+				<table class="table table-inverse table-striped table-hover table-sm">	<!--cor inversa,cor sim e nao, hover ao passar o mouse, sm tabela compacta sem espaços entre linhas-->
+					<thead><!--cabecalho das colunas-->
+						<tr>
+							<th>N°</th><!--info cabecalho da coluna--> 
+							<th>Primeiro Nome</th>
+							<th>Sobreonme</th>
+							<th>Nome de Usuário</th>
+						</tr>
+					</thead>
+					<tbody><!--dados do corpo da tabela-->
+						<tr>
+							<th scope="row">1</th>
+							<td>Emerson</td>
+							<td>Batista</td>
+							<td>Mario</td>
+						</tr>
+						<tr>
+							<th scope="row">2</th>
+							<td>de Almeida</td>
+							<td>Tevez</td>
+							<td>do Pulo</td>
+						</tr>
+						<tr>
+							<th scope="row">3</th>
+							<td>Emer12</td>
+							<td>BatistaBolado</td>
+							<td>MarioTenis</td>									
+						</tr>
+					</tbody>
+				</table>
+				<br><br>
+				
+				<table class="table">	<!--cor inversa,cor sim e nao, hover ao passar o mouse, sm tabela compacta sem espaços entre linhas-->
+					<thead><!--cabecalho das colunas-->
+						<tr>
+							<th>N°</th><!--info cabecalho da coluna--> 
+							<th>Primeiro Nome</th>
+							<th>Sobreonme</th>
+							<th>Nome de Usuário</th>
+						</tr>
+					</thead>
+					<tbody><!--dados do corpo da tabela-->
+						<tr class="table-active">
+							<th scope="row">Ativo</th>
+							<td>Emerson</td>
+							<td>Batista</td>
+							<td>Mario</td>
+						</tr>
+						<tr>
+							<th scope="row">Padrão</th>
+							<td>de Almeida</td>
+							<td>Tevez</td>
+							<td>do Pulo</td>
+						</tr>
+						<tr class="table-primary">
+							<th scope="row">Primário</th>
+							<td>Emer12</td>
+							<td>BatistaBolado</td>
+							<td>MarioTenis</td>									
+						</tr>
+						<tr class="table-secondary">
+							<th scope="row">Secundário</th>
+							<td>Emerson</td>
+							<td>Batista</td>
+							<td>Mario</td>
+						</tr>
+						<tr class="table-success">
+							<th scope="row">Sucesso</th>
+							<td>de Almeida</td>
+							<td>Tevez</td>
+							<td>do Pulo</td>
+						</tr>
+						<tr class="table-danger">
+							<th scope="row">Perigo</th>
+							<td>Emer12</td>
+							<td>BatistaBolado</td>
+							<td>MarioTenis</td>									
+						</tr>
+						<tr class="table-warning">
+							<th scope="row">Atenção</th>
+							<td>Emerson</td>
+							<td>Batista</td>
+							<td>Mario</td>
+						</tr>
+						<tr class="table-info">
+							<th scope="row">informação</th>
+							<td>de Almeida</td>
+							<td>Tevez</td>
+							<td>do Pulo</td>
+						</tr>
+						<tr class="table-light">
+							<th scope="row">luz</th>
+							<td>Emer12</td>
+							<td>BatistaBolado</td>
+							<td>MarioTenis</td>									
+						</tr>
+						<tr class="table-dark">
+							<th scope="row">Sombrio</th>
+							<td>Emer12</td>
+							<td>BatistaBolado</td>
+							<td>MarioTenis</td>									
+						</tr>						
+					</tbody>
+				</table>
+				<br><br>
+				<table class="table table-inverse">	<!--se for tabela inversa usar bg- ao inves de table para classe-->
+					<thead><!--cabecalho das colunas-->
+						<tr>
+							<th>N°</th><!--info cabecalho da coluna--> 
+							<th>Primeiro Nome</th>
+							<th>Sobreonme</th>
+							<th>Nome de Usuário</th>
+						</tr>
+					</thead>
+					<tbody><!--dados do corpo da tabela-->
+						<tr class="table-active">
+							<th scope="row">Ativo</th>
+							<td>Emerson</td>
+							<td>Batista</td>
+							<td>Mario</td>
+						</tr>
+						<tr>
+							<th scope="row">Padrão</th>
+							<td>de Almeida</td>
+							<td>Tevez</td>
+							<td>do Pulo</td>
+						</tr>
+						<tr class="bg-primary">
+							<th scope="row">Primário</th>
+							<td>Emer12</td>
+							<td>BatistaBolado</td>
+							<td>MarioTenis</td>									
+						</tr>
+						<tr class="bg-secondary">
+							<th scope="row">Secundário</th>
+							<td>Emerson</td>
+							<td>Batista</td>
+							<td>Mario</td>
+						</tr>
+						<tr class="bg-success">
+							<th scope="row">Sucesso</th>
+							<td>de Almeida</td>
+							<td>Tevez</td>
+							<td>do Pulo</td>
+						</tr>
+						<tr class="bg-danger">
+							<th scope="row">Perigo</th>
+							<td>Emer12</td>
+							<td>BatistaBolado</td>
+							<td>MarioTenis</td>									
+						</tr>
+						<tr class="bg-warning">
+							<th scope="row">Atenção</th>
+							<td>Emerson</td>
+							<td>Batista</td>
+							<td>Mario</td>
+						</tr>
+						<tr class="bg-info">
+							<th scope="row">informação</th>
+							<td>de Almeida</td>
+							<td>Tevez</td>
+							<td>do Pulo</td>
+						</tr>
+						<tr class="bg-light">
+							<th scope="row">luz</th>
+							<td>Emer12</td>
+							<td>BatistaBolado</td>
+							<td>MarioTenis</td>									
+						</tr>
+						<tr class="bg-dark">
+							<th scope="row">Sombrio</th>
+							<td>Emer12</td>
+							<td>BatistaBolado</td>
+							<td>MarioTenis</td>									
+						</tr>						
+					</tbody>
+				</table>				
+				
+			</div>
+			<div class="col bg">
+			
+			</div>
+			
+		</div>
+	</div>	
+	
+		
+<!--a sequencia importa primeiro jquery, depois popper, depois o bootstrap-->
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+</body>
+</html>

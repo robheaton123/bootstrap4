@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="pt-br"><!--linguagem-->
+<head>
+<meta charset="utf-8"> <!--charset cadeia de caracteres-->
+<meta name="viewport" content="width-device-width, initial-scale = 1, shrink-to-fit=no">
+<!--content= a largura vai ser igual a largura do dispositivo,intial-scale= escala de zooom inicial,shrink-to-fit = nao vai encolher em relaçao ao conteudo-->
+<title>Colapso</title><!---->
+<!--Instalacao via download-->
+<link rel="stylesheet" href="css/bootstrap.min.css" > 
+<!--style para css-->	
+<style type="text/css"> 
+	div.bg{
+	background-color:#563d7c;	
+	height: auto;	
+	border: 1px solid #FFFFFF;
+	padding: 10px 0;
+	}
+	div.bg1{
+	background-color:#FF0004;	
+	height: 50px;	
+	border: 1px solid #FFFFFF;
+	
+	}
+	.card{margin-bottom: 30px} 
+</style>	
+</head>	<!--CSS um espaco entre os cards no bottom-->
+
+<!--nao há borda no boostrap, foi definida em branco no style-->	
+	
+<body>
+	<!--fluid pega tela inteira-->
+	<div class="container-fluid"> 
+		<div class="row"><!--row = linha-->
+			<div class="col bg"> <!--col = coluna-->
+			
+			</div>
+			
+			<div class="col-10 bg">
+<!--dois disparadores um link e um button-->				
+				<p>							<!--data-toggle= apontando para o collapse que ira aparecer--->
+				<!--href indicando o id do collapso, data-toggle=collapse, dois arias para tecnologia assistiva-->	
+				<a href="#ItemColapso1" class="btn btn-primary" data-toggle="collapse" aria-expanded="false" aria-controls="#ItemColapso1">Disparador Href</a>
+				
+				<!--data-target apontando para o id do colapso que ira aparecer-->	
+				<button class="btn btn-primary" data-toggle="collapse" type="button" data-target="#ItemColapso1" aria-expanded="false" aria-controls="#ItemColapso1">Disparador Button</button>
+				</p>
+				
+				<div class="collapse" id="ItemColapso1"><!--div como o collapse o que ira aparecer--->
+					<div class="card card-body">
+						Texto-texto texto123 Texto-texto texto123 Texto-texto texto123 Texto-texto texto123 Texto-texto texto123 Texto-texto texto123 .,Texto-texto texto123
+					</div>
+				</div>
+				
+				
+				<hr><!-------------------------------------------------------------------------------------------->
+				
+				<!--dois disparadores um link e um button-->				
+				<p>
+				<a href="#ItemColapso2" class="btn btn-primary" data-toggle="collapse" aria-expanded="false" aria-controls="#ItemColapso2">Disparador Href</a>
+				<button class="btn btn-primary" data-toggle="collapse" type="button" data-target="#ItemColapso3" aria-expanded="false" aria-controls="#ItemColapso3">Disparador Button</button>
+				</p>
+				<div class="collapse" id="ItemColapso2">
+					<div class="card card-body">
+						<h3>Item 2</h3>
+						Texto-texto texto123 Texto-texto texto123 Texto-texto texto123 Texto-texto texto123 Texto-texto texto123 Texto-texto texto123 .,Texto-texto texto123
+					</div>
+				</div>
+				<div class="collapse" id="ItemColapso3">
+					<div class="card card-body">
+						<h3>Item 3</h3>
+						Texto-texto texto123 Texto-texto texto123 Texto-texto texto123 Texto-texto texto123 Texto-texto texto123 Texto-texto texto123 .,Texto-texto texto123
+					</div>
+				</div>
+				
+				<!-----------------------------------ACCORDION EFEITO SANFONA -------------------------------->
+				<div class="row">
+					<div class="col">
+						<div id="accordion" role="tablist">
+							<div class="card">  <!--UM CARD COM UM HEADER E UM BODY-->
+								<div class="card-header" role="tab" id="header1">
+									<h5 class="mb-0">
+									<a href="#colapso1" data-toggle="collapse" aria-expanded="true" aria-controls="colapso1">
+										Link para Colapso #1
+									</a>	
+									</h5>
+								</div>
+								<div id="colapso1" class="collapse show" role="tabpanel" aria-labelledby="header1" data-parent="#accordion">
+									<div class="card-body">
+										<h5>Item Colapso #1</h5>
+										Texto-texto texto123 Texto-texto texto123 Texto-texto texto123 Texto-texto texto123 Texto-texto texto123 Texto-texto texto123 .,Texto-texto texto123
+									</div>
+								</div>
+								<!--/////////////////////////-->
+								<div class="card-header" role="tab" id="header2">
+									<h5 class="mb-0">
+									<a href="#colapso2" data-toggle="collapse" aria-expanded="false" aria-controls="colapso2">
+										Link para Colapso #2
+									</a>	
+									</h5>
+								</div>
+								<div id="colapso2" class="collapse" role="tabpanel" aria-labelledby="header2" data-parent="#accordion">
+									<div class="card-body">
+										<h5>Item Colapso #2</h5>
+										Texto-texto texto123 Texto-texto texto123 Texto-texto texto123 Texto-texto texto123 Texto-texto texto123 Texto-texto texto123 .,Texto-texto texto123
+									</div>
+								</div>
+								<!--/////////////////////////-->
+								<div class="card-header" role="tab" id="header3">
+									<h5 class="mb-0">
+									<a href="#colapso3" data-toggle="collapse" aria-expanded="false" aria-controls="colapso3">
+										Link para Colapso #3
+									</a>	
+									</h5>
+								</div>
+								<div id="colapso3" class="collapse" role="tabpanel" aria-labelledby="header3" data-parent="#accordion">
+									<div class="card-body">
+										<h5>Item Colapso #3</h5>
+										Texto-texto texto123 Texto-texto texto123 Texto-texto texto123 Texto-texto texto123 Texto-texto texto123 Texto-texto texto123 .,Texto-texto texto123
+									</div>
+								</div>
+								
+								
+							</div>
+						</div>
+					
+					
+					</div>
+				
+				</div>
+				
+				
+				
+				
+				
+			</div>
+				
+			
+			
+			<div class="col bg">
+			
+			</div>
+	
+		
+		</div>
+	</div>	
+	
+		
+<!--a sequencia importa primeiro jquery, depois popper, depois o bootstrap-->
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+	
+	
+</body>
+</html>
