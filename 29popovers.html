@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="pt-br"><!--linguagem-->
+<head>
+<meta charset="utf-8"> <!--charset cadeia de caracteres-->
+<meta name="viewport" content="width-device-width, initial-scale = 1, shrink-to-fit=no">
+<!--content= a largura vai ser igual a largura do dispositivo,intial-scale= escala de zooom inicial,shrink-to-fit = nao vai encolher em relaçao ao conteudo-->
+<title>Popovers</title><!---->
+<!--Instalacao via download-->
+<link rel="stylesheet" href="css/bootstrap.min.css" > 
+<!--style para css-->	
+<style type="text/css"> 
+	div.bg{
+	background-color:#FFFFFF;	
+	height: auto;	
+	border: 1px solid #000000;
+	padding: 10px 0;
+	}
+	div.mr{
+	background-color:#FFFFFF;	
+	height: auto;	
+	border: 1px solid #FFFFFF;
+	margin-bottom: 30px;
+	}
+	.card{margin-bottom: 30px} 
+</style>	
+</head>	<!--CSS um espaco entre os cards no bottom-->
+
+<!--nao há borda no boostrap, foi definida em branco no style-->	
+	
+<body>
+	<!--fluid pega tela inteira-->
+	<div class="container-fluid"> 
+		<div class="row">	
+			<div class="col-12">
+			<!---botao popover--->	
+				<button type="button" class="btn btn-lg btn-danger" data-toggle="popover" title="Titulo do Popover" data-content="TExto texto TExto texto TExto texto TExto texto TExto texto TExto texto TExto texto TExto texto">
+					Clique para abrir o popover
+				</button>
+			</div>
+		</div>
+		
+		<p>TExto texto TExto texto TExto texto TExto texto TExto texto TExto texto TExto texto</p>
+		<p>TExto texto TExto texto TExto texto TExto texto TExto texto TExto texto TExto texto</p>
+		
+		
+		<div class="row">
+			<div class="col-12">
+				<!--popover aparecendo no topo, usar data placement--->
+				<button type="button" class="btn btn-secondary" data-container="body" data-toggle="popover" data-placement="top" data-content="TExto texto TExto texto TExto texto TExto texto TExto texto TExto texto TExto texto TExto">
+					Popover - TOP
+				</button>
+			</div>	
+		</div>
+	</div>
+	
+	<p>TExto texto TExto texto TExto texto TExto texto TExto texto TExto texto TExto texto</p>
+		<p>TExto texto TExto texto TExto texto TExto texto TExto texto TExto texto TExto texto</p>
+	
+	<div class="row">
+			<div class="col-12">
+				<!--popover aparecendo no topo, usar data placement--->
+				<button type="button" class="btn btn-secondary" data-container="body" data-toggle="popover" data-placement="right" data-content="TExto texto TExto texto TExto texto TExto texto TExto texto TExto texto TExto texto TExto">
+					Popover - Right
+				</button>
+			</div>	
+	</div>
+	
+	<p>TExto texto TExto texto TExto texto TExto texto TExto texto TExto texto TExto texto</p>
+		<p>TExto texto TExto texto TExto texto TExto texto TExto texto TExto texto TExto texto</p>
+	
+	<div class="row">
+			<div class="col-12">
+				<!--popover aparecendo embaixo, usar data placement--->
+				<button type="button" class="btn btn-secondary" data-container="body" data-toggle="popover" data-placement="bottom" data-content="TExto texto TExto texto TExto texto TExto texto TExto texto TExto texto TExto texto TExto">
+					Popover - Bottom
+				</button>
+			</div>	
+	</div>
+	
+	<p>TExto texto TExto texto TExto texto TExto texto TExto texto TExto texto TExto texto</p>
+		<p>TExto texto TExto texto TExto texto TExto texto TExto texto TExto texto TExto texto</p>
+
+	<div class="row">
+			<div class="col-12">
+				<!--popover aparecendo na esquerda, usar data placement--->
+				TExto texto TExto textoTExto texto TExto texto
+				<button type="button" class="btn btn-secondary" data-container="body" data-toggle="popover" data-placement="left" data-content="TExto texto TExto texto TExto texto TExto texto TExto texto TExto texto TExto texto TExto">
+					Popover - Left
+				</button>
+			</div>	
+	</div>
+	
+		
+	
+		
+<!--a sequencia importa primeiro jquery, depois popper, depois o bootstrap-->
+<script src="js/jquery-3.2.1.min.js"></script>
+	
+<!---biblioteca popper para utilizar popovers--->	
+<script src="js/popper.min.js"></script> 
+	
+	
+	
+<script src="js/bootstrap.min.js"></script>
+								<!--javascript chamando a funcao, tudo o que for [data-toogle="popover"] recebe a funcao popover()-->
+	<script type="text/javascript">
+		$(function(){				
+			$('[data-toggle="popover"]').popover()
+		});	
+	</script>
+</body>
+</html>

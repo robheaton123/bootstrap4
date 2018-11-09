@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="pt-br"><!--linguagem-->
+<head>
+<meta charset="utf-8"> <!--charset cadeia de caracteres-->
+<meta name="viewport" content="width-device-width, initial-scale = 1, shrink-to-fit=no">
+<!--content= a largura vai ser igual a largura do dispositivo,intial-scale= escala de zooom inicial,shrink-to-fit = nao vai encolher em relaçao ao conteudo-->
+<title>Dropdown</title><!---->
+<!--Instalacao via download-->
+<link rel="stylesheet" href="css/bootstrap.min.css" > 
+<!--style para css-->	
+<style type="text/css"> 
+	div.bg{
+	background-color:#563d7c;	
+	height: auto;	
+	border: 1px solid #FFFFFF;
+	padding: 10px 0;
+	}
+	div.bg1{
+	background-color:#FF0004;	
+	height: 50px;	
+	border: 1px solid #FFFFFF;
+	
+	}
+	.card{margin-bottom: 30px} 
+</style>	
+</head>	<!--CSS um espaco entre os cards no bottom-->
+
+<!--nao há borda no boostrap, foi definida em branco no style-->	
+	
+<body>
+	<!--fluid pega tela inteira-->
+	<div class="container-fluid"> 
+		<div class="row"><!--row = linha-->
+			<div class="col bg"> <!--col = coluna-->
+			
+			</div>
+			
+			<div class="col-10 bg">
+				<!--criando o dropdown-->
+				<div class="dropdown">
+					<!--botao principal do dropdown-->
+					<button id="button1" class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</button>
+					<!--menu do dropdown-->
+						<div class="dropdown-menu" aria-labelledby="button1">
+						<a class="dropdown-item" href="#">Link 1</a>
+						<a class="dropdown-item" href="#">Link 2</a>
+						<a class="dropdown-item" href="#">Link 3</a>	
+						</div>
+				</div>
+				
+				<hr><!------------Dropdown com Link------------->
+				
+				<div class="dropdown">
+					<a id="button2" class="btn btn-primary dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Link Dropdown</a>
+					
+					
+					<!--menu do dropdown-->
+						<div class="dropdown-menu" aria-labelledby="button2">
+							<h6 class="dropdown-header">Cabeçalho do Dropdown</h6><!---cabeçalho do dropdown-->
+						<a class="dropdown-item disabled" href="#">Link 1</a><!--disabled só fica com a aparencia-->
+						<a class="dropdown-item" href="#">Link 2</a>
+						<a class="dropdown-item" href="#">Link 3</a>
+							<div class="dropdown-divider"></div><!--dividindo o dropdown , outro assunto-->	
+							<h6 class="dropdown-header">Outro Cabeçalho do Dropdown</h6>
+							<a class="dropdown-item" href="#">Link Separado</a>
+						</div>
+				</div>
+				
+				
+						
+			</div>
+				
+			
+			
+			<div class="col bg">
+			
+			</div>
+	
+		
+		</div>
+	</div>	
+	
+		
+<!--a sequencia importa primeiro jquery, depois popper, depois o bootstrap-->
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+	<!--script para mexer no javascript e modificar a velocidade do carousel-->
+<script> 
+	$('.carousel').carousel({
+		interval: 80
+	})
+</script>	
+	
+</body>
+</html>

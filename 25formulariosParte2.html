@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="pt-br"><!--linguagem-->
+<head>
+<meta charset="utf-8"> <!--charset cadeia de caracteres-->
+<meta name="viewport" content="width-device-width, initial-scale = 1, shrink-to-fit=no">
+<!--content= a largura vai ser igual a largura do dispositivo,intial-scale= escala de zooom inicial,shrink-to-fit = nao vai encolher em relaçao ao conteudo-->
+<title>FormulariosParte2</title><!---->
+<!--Instalacao via download-->
+<link rel="stylesheet" href="css/bootstrap.min.css" > 
+<!--style para css-->	
+<style type="text/css"> 
+	div.bg{
+	background-color:#FFFFFF;	
+	height: auto;	
+	border: 1px solid #000000;
+	padding: 10px 0;
+	}
+	div.bg1{
+	background-color:#FF0004;	
+	height: 50px;	
+	border: 1px solid #FFFFFF;
+	
+	}
+	.card{margin-bottom: 30px} 
+</style>	
+</head>	<!--CSS um espaco entre os cards no bottom-->
+
+<!--nao há borda no boostrap, foi definida em branco no style-->	
+	
+<body>
+	<!--fluid pega tela inteira-->
+	<div class="container-fluid"> 
+		<div class="row"><!--row = linha-->
+			<div class="col bg"> <!--col = coluna-->
+			
+			</div>
+			
+			<div class="col-10 bg">
+				
+				<form> <!--formulario-->
+					<div class="form-group">
+						<label for="InputEmail1">Email</label>
+						<!--form-control=formato do bootstrap linha inteira-->
+						<input type="email" class="form-control" name="InputEmail1" id="InputEmail1" placeholder="Insira seu email" aria-describedby="emailHelp" style="width: 25%;"><!--CSS STYLE definindo 25% de tamanho-->
+						<!--small + class=aparecer como uma dica para o usuario /// id e aria-describedby são tec assitivas-->
+						<small id="emailHelp" class="form-text text-muted" >Ex.: seuemail@seudominio.com.br</small>
+					</div>
+					<!--------Input senha----->
+					<div class="form-group">
+						<label for="InputSenha1">Senha</label>
+						<!--form-control=formato do bootstrap linha inteira-->
+						<input type="password" class="form-control" name="InputSenha1" id="InputSenha1" placeholder="Insira sua Senha">
+					</div>
+					<!--------CHECKBOX----->
+					<div class="form-check">
+						<label class="form-check-label">
+							<input type="checkbox" class="form-check-input">
+							Manter Conectado
+						</label>
+					</div>
+					<button class="btn btn-primary" type="submit">Entrar</button>
+				
+				</form>
+				
+		<!------------------------------------------------->		
+				<div class="row">
+					<div class="col-6">
+				<!--inputs com alturas diferentes--->		
+						<input type="text" class="form-control form-control-lg" placeholder="Teste Readonly" readonly><!--READONLY-->
+						<input type="text" class="form-control">
+						<input type="text" class="form-control-sm">
+				
+					</div>
+				</div>
+	<!----------------INPUT EM LINHA------------------------------->
+	
+				<br><br><br><br>
+		<div class="row">	
+			<div class="col-12">		
+				<form> <!--formulario-->
+					<!--row-->
+					<div class="form-group row">
+						<label for="InputEmail2" class="col-sm-2 col-form-label">Email</label>
+						<div class="col-sm-10"><!--col-10 aqui e o restante no label quando o celular for pequeno ele ira ficar com o label em cima do input-->
+							<input type="email" class="form-control-plaintext" name="InputEmail2" id="InputEmail2" placeholder="Insira seu email" value="email@email.com.br" readonly>
+					<!--classe form-control-plaintext tira o formato do input-->		
+						</div>
+					</div>
+					<!--------Input senha----->
+					<div class="form-group row">
+						<label for="InputSenha2" class="col-sm-2 col-form-label">Senha</label>
+						<div class="col-sm-10">
+						<input type="password" class="form-control" name="InputSenha2" id="InputSenha2" placeholder="Insira sua Senha">
+						</div>
+					</div>
+					
+				
+				</form>
+				
+				
+				</div>
+			</div>
+		<!-----------------FORMULARIO COMPLETO ------------------------------->		
+	<div class="row">
+		<div class="col-12">
+			<form>
+				<!------------------------>
+				<div class="form-row">
+					<div class="form-group col-md-6">
+						<label for="nome" class="col-form-label">Nome:</label>
+		 				<input type="text" class="form-control" id="nome" name="nome" placeholder="Digite seu Nome">
+					</div>	
+
+					<div class="form-group col-md-6">
+						<label for="sobrenome" class="col-form-label">Sobrenome:</label>
+		 				<input type="text" class="form-control" id="sobrenome" name="sobrenome" placeholder="Digite seu Sobrenome">
+					</div>
+		 		</div>
+				<!------------------------>
+				<div class="form-group">
+					<label for="end" class="col-form-label">Endereço:</label>
+		 				<input type="text" class="form-control" id="endereco" name="endereco" placeholder="Digite seu Endereço">
+				</div>
+				<!------------------------>
+				<div class="form-row">
+					<div class="form-group col-md-6">
+						<label for="cidade" class="col-form-label">Cidade:</label>
+		 				<input type="text" class="form-control" id="cidade" name="cidade" placeholder="Digite sua cidade">
+					</div>	
+<!------------------------><!------------------------>
+					<div class="form-group col-md-4">
+						<label for="estado" class="col-form-label">Estado:</label>
+		 				<input type="text" class="form-control" id="estado" name="estado" placeholder="Digite seu Estado">
+					</div>
+				<!------------------------>	
+					<div class="form-group col-md-2">
+						<label for="cep" class="col-form-label">CEP:</label>
+		 				<input type="text" class="form-control" id="cep" name="cep" placeholder="Digite seu cep">
+					</div>
+		 		</div>
+				<button class="btn btn-primary">Cadastrar</button>
+		 	</form>
+		</div>
+	</div>				
+	
+<!-----------------FIM FORMULARIO COMPLETO ------------------------------->
+	<hr><hr>		
+<!-----------------FORMULARIO INLINE ------------------------------->				
+			<div class="row">
+				<div class="col-12">
+					<form class="form-inline">
+						<label class="sr-only" for="nameInLine">Nome</label>
+						<input type="text" id="nameInLine" class="form-control mb-2 mr-2" placeholder="Digite Seu Nome">
+	<!--sr-only só vai aparecer em leitores de tela para cegos---><!--mr-2 = margem right-->					
+						<label class="sr-only" for="senhaInLine">Senha</label>
+						<input type="text" id="senhaInLine" class="form-control mb-2 mr-2" placeholder="Digite sua senha">
+						<button class="btn btn-primary">Entrar</button>
+					</form>
+				</div>	
+				
+			</div>
+<!-----------------FIM FORMULARIO INLINE ------------------------------->				
+				
+				
+				
+				
+			</div><!----------------->
+			
+			<div class="col bg">
+			
+			</div>
+	
+		
+		</div>
+	</div>
+		
+	
+		
+<!--a sequencia importa primeiro jquery, depois popper, depois o bootstrap-->
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+</body>
+</html>
