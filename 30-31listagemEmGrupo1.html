@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="pt-br"><!--linguagem-->
+<head>
+<meta charset="utf-8"> <!--charset cadeia de caracteres-->
+<meta name="viewport" content="width-device-width, initial-scale = 1, shrink-to-fit=no">
+<!--content= a largura vai ser igual a largura do dispositivo,intial-scale= escala de zooom inicial,shrink-to-fit = nao vai encolher em relaçao ao conteudo-->
+<title>Listagem em Grupo</title><!---->
+<!--Instalacao via download-->
+<link rel="stylesheet" href="css/bootstrap.min.css" > 
+<!--style para css-->	
+<style type="text/css"> 
+	div.bg{
+	background-color:#FFFFFF;	
+	height: auto;	
+	border: 1px solid #000000;
+	padding: 10px 0;
+	}
+	div.mr{
+	background-color:#FFFFFF;	
+	height: auto;	
+	border: 1px solid #FFFFFF;
+	margin-bottom: 30px;
+	}
+	.card{margin-bottom: 30px} 
+</style>	
+</head>	<!--CSS um espaco entre os cards no bottom-->
+
+<!--nao há borda no boostrap, foi definida em branco no style-->	
+	
+<body>
+	<!--fluid pega tela inteira-->
+	<div class="container-fluid"> 
+		<div class="row">	
+			<div class="col-4">
+				<ul class="list-group">
+					<li class="list-group-item">1</li>
+					<li class="list-group-item active">2</li>
+					<li class="list-group-item disabled">3</li>
+					<li class="list-group-item">4</li>
+					<li class="list-group-item">5</li>
+				</ul>
+			</div>
+			
+			<div class="col-4">
+				<div class="list-group">
+					<a href="#" class="list-group-item active">Link 1</a>
+					<a href="#" class="list-group-item disabled list-group-item-action">Link 2</a>
+					<a href="#" class="list-group-item list-group-item-action">Link 3</a>
+					<a href="#" class="list-group-item list-group-item-action">Link 4</a>
+				</div>
+			</div>
+			
+			<div class="col-4">
+				<div class="list-group">
+					<button type="button" class="list-group-item list-group-item-action active">Button</button>
+					<button type="button" class="list-group-item list-group-item-action" disabled>Button</button>
+					<button type="button" class="list-group-item list-group-item-action">Button</button>
+					<button type="button" class="list-group-item list-group-item-action">Button</button>
+				</div>
+			</div>
+			
+			
+		</div>
+		
+		
+		<div class="row">	
+			<div class="col-4">
+				<ul class="list-group">
+					<li class="list-group-item list-group-item-primary">1</li>
+					<li class="list-group-item list-group-item-secondary active">2</li>
+					<li class="list-group-item list-group-item-success disabled">3</li>
+					<li class="list-group-item list-group-item-danger">4</li>
+					<li class="list-group-item list-group-item-warning">5</li>
+				</ul>
+			</div>
+			
+			<div class="col-4">
+				<div class="list-group">
+					<a href="#" class="list-group-item active">Link 1</a>
+					<a href="#" class="list-group-item disabled list-group-item-action">Link 2</a>
+					<a href="#" class="list-group-item list-group-item-action">Link 3</a>
+					<a href="#" class="list-group-item list-group-item-action">Link 4</a>
+				</div>
+			</div>
+			
+			<div class="col-4">
+				<div class="list-group">
+					<button type="button" class="list-group-item list-group-item-action active">Button</button>
+					<button type="button" class="list-group-item list-group-item-action" disabled>Button</button>
+					<button type="button" class="list-group-item list-group-item-action">Button</button>
+					<button type="button" class="list-group-item list-group-item-action">Button</button>
+				</div>
+			</div>
+			
+			
+		</div>
+		<br><br>
+		<!---------------Listagem em Grupo Parte2-------------------------->
+		<div class="row">
+			<div class="col-4">
+<!-----tudo dentro de um link(clicavel)-------->			
+				<div class="list-group">
+					<a href="#" class="list-group-item list-group-item-action active">
+					<div class="d-flex w-100 justify-content-between">
+						<h5>Titulo da minha Lista</h5><small>3 dias atrás</small>	
+						
+					</div>
+						<p class="mb-1">Texto texto TEXTO TEXTOTexto texto TEXTO TEXTOTexto texto TEXTO TEXTO</p>
+					</a>
+				</div>
+				
+				<div class="list-group">
+					<a href="#" class="list-group-item list-group-item-action">
+					<div class="d-flex w-100 justify-content-between">
+						<h5>Titulo da minha Lista</h5><small>3 dias atrás</small>	
+						
+					</div>
+						<p class="mb-1">Texto texto TEXTO TEXTOTexto texto TEXTO TEXTOTexto texto TEXTO TEXTO</p>
+					</a>
+				</div>
+				
+				<div class="list-group">
+					<a href="#" class="list-group-item list-group-item-action">
+					<div class="d-flex w-100 justify-content-between">
+						<h5>Titulo da minha Lista</h5><small>3 dias atrás</small>	
+						
+					</div>
+						<p class="mb-1">Texto texto TEXTO TEXTOTexto texto TEXTO TEXTOTexto texto TEXTO TEXTO</p>
+					</a>
+				</div>
+				
+				
+				
+			</div>
+			
+			
+				
+				
+				
+			</div>
+<!----------------------------------------------->
+<br><br>		
+<!-------------------LISTAGEM EM GRUPO MASTER INICIO---------------------------->		
+		<div class="row">
+				
+				<div class="col-3">
+					<div class="list-group" id="list-tab" role="tablist">
+						<a href="#list-home" class="list-group-item list-group-item-action active" id="list-home-list" data-toggle="list" role="tab" aria-control="home">
+						HOME
+						</a><!---DISPARADOR--->
+						<a href="#list-perfil" class="list-group-item list-group-item-action" id="list-perfil-list" data-toggle="list" role="tab" aria-control="perfil">
+						Perfil
+						</a><!---DISPARADOR--->
+						<a href="#list-sobre" class="list-group-item list-group-item-action" id="list-sobre-list" data-toggle="list" role="tab" aria-control="sobre">
+						Sobre
+						</a><!---DISPARADOR--->
+						<a href="#list-contato" class="list-group-item list-group-item-action" id="list-contato-list" data-toggle="list" role="tab" aria-control="contato">
+						Contato
+						</a><!---DISPARADOR--->
+
+					</div>
+				</div>
+				
+				<div class="col-9">
+					<div class="tab-content" id="nav-tabContent">
+						<div id="list-home" class="tab-pane fade show active" role="tabpanel" aria-labelledby="list-home-list">
+							<h3>Home</h3>
+							<p>TEXTO texto TEXTO texto TEXTO texto TEXTO texto TEXTO texto TEXTO texto TEXTO texto TEXTO texto TEXTO texto TEXTO texto TEXTO texto TEXTO texto TEXTO texto TEXTO texto TEXTO texto TEXTO texto TEXTO texto TEXTO texto TEXTO texto TEXTO texto TEXTO texto TEXTO texto TEXTO texto TEXTO texto</p>
+						</div>
+						<div id="list-perfil" class="tab-pane fade show" role="tabpanel" aria-labelledby="list-perfil-list">
+							<h3>Perfil</h3>
+							<p>TEXTO texto TEXTO texto TEXTO texto TEXTO texto TEXTO texto TEXTO texto TEXTO texto TEXTO texto TEXTO texto TEXTO texto TEXTO texto TEXTO texto TEXTO texto TEXTO texto TEXTO texto TEXTO texto TEXTO texto TEXTO texto TEXTO texto TEXTO texto TEXTO texto TEXTO texto TEXTO texto TEXTO texto</p>
+						</div>
+						<div id="list-sobre" class="tab-pane fade show" role="tabpanel" aria-labelledby="list-sobre-list">
+							<h3>Sobre</h3>
+							<p>TEXTO texto TEXTO texto TEXTO texto TEXTO texto TEXTO texto TEXTO texto TEXTO texto TEXTO texto TEXTO texto TEXTO texto TEXTO texto TEXTO texto TEXTO texto TEXTO texto TEXTO texto TEXTO texto TEXTO texto TEXTO texto TEXTO texto TEXTO texto TEXTO texto TEXTO texto TEXTO texto TEXTO texto</p>
+						</div>
+						<div id="list-contato" class="tab-pane fade show" role="tabpanel" aria-labelledby="list-contato-list">
+							<h3>Contato</h3>
+							<form>
+								<div class="form-group">
+									<label for="nome">Nome</label>
+									<input type="text" class="form-control" name="nome" id="nome" placeholder="Digite seu nome">
+								</div>
+								<div class="form-group">
+									<label for="assunto">Assunto</label>
+									<input type="text" class="form-control" name="assunto" id="assunto" placeholder="Digite seu assunto">
+								</div>
+								<div class="form-group">
+									<label for="conteudo">Conteudo</label>
+									<textarea class="form-control" name="conteudo" id="conteudo"></textarea>
+									<button class="btn btn-primary">Enviar</button>
+								</div>
+							</form>
+						</div>
+						
+					</div>	
+				</div>
+			
+			
+			
+		</div>	
+	<!-------------------LISTAGEM EM GRUPO MASTER FIM---------------------------->		
+		
+		
+	</div>
+		
+		
+	
+		
+<!--a sequencia importa primeiro jquery, depois popper, depois o bootstrap-->
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+</body>
+</html>

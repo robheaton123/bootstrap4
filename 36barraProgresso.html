@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="pt-br"><!--linguagem-->
+<head>
+<meta charset="utf-8"> <!--charset cadeia de caracteres-->
+<meta name="viewport" content="width-device-width, initial-scale = 1, shrink-to-fit=no">
+<!--content= a largura vai ser igual a largura do dispositivo,intial-scale= escala de zooom inicial,shrink-to-fit = nao vai encolher em relaçao ao conteudo-->
+<title>Barra de Progresso</title><!---->
+<!--Instalacao via download-->
+<link rel="stylesheet" href="css/bootstrap.min.css" > 
+<!--style para css-->
+
+<!---margem no topo para dar espaço da barra de navegacao ao texto-->	
+<style type="text/css"> 
+
+	
+</style>	
+</head>	<!--CSS um espaco entre os cards no bottom-->
+	
+	
+<body>
+	<!--fluid pega tela inteira-->
+	<div class="container-fluid"> 
+		<div class="row">
+			<div class="col-12">					<!--------aria-valuenow=tecnologia assistivas--------->
+				<div class="progress mb-2">
+<!--mb-2=margen button 2--->					
+					<div class="progress-bar bg-success" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">0%</div>
+				</div>
+<!--progress bar com 25% classe auxiliar w-25-->				
+				<div class="progress mb-2">
+					<div class="progress-bar w-25 bg-primary" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
+				</div>
+				
+				<div class="progress mb-2">
+					<div class="progress-bar w-50 bg-warning" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">50%</div>
+				</div>
+				
+				<div class="progress mb-2">
+					<div class="progress-bar w-75 bg-danger" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">75%</div>
+				</div>
+				
+				<div class="progress mb-2">
+					<div class="progress-bar w-100 bg-info" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">100%</div>
+				</div>
+				
+				<div class="progress mb-2">
+	<!-----utilizando duas barras---->				
+					<div class="progress-bar w-25 bg-info" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
+					<div class="progress-bar w-50 bg-dark" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">50%</div>
+				</div>
+				
+				<div class="progress mb-2">
+					<div class="progress-bar w-100 bg-info progress-bar-striped" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">100%</div>
+				</div>
+				
+				<div class="progress mb-2">
+					<div class="progress-bar w-100 bg-info progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">100%</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+		
+<!--a sequencia importa primeiro jquery, depois popper, depois o bootstrap-->
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+<!--Javascript , $(classe modal da pagina).chamando a funcao modal(parametro)------------>
+<script>
+	
+//funcao sempre chamando modal pela classe:	$('.modal').modal('show')
+//----------------------	
+	
+</script>	
+
+</body>
+</html>

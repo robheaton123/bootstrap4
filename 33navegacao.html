@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="pt-br"><!--linguagem-->
+<head>
+<meta charset="utf-8"> <!--charset cadeia de caracteres-->
+<meta name="viewport" content="width-device-width, initial-scale = 1, shrink-to-fit=no">
+<!--content= a largura vai ser igual a largura do dispositivo,intial-scale= escala de zooom inicial,shrink-to-fit = nao vai encolher em relaçao ao conteudo-->
+<title>Navegacao</title><!---->
+<!--Instalacao via download-->
+<link rel="stylesheet" href="css/bootstrap.min.css" > 
+<!--style para css-->	
+<style type="text/css"> 
+
+	div.mr{
+	background-color:#FFFFFF;	
+	height: auto;	
+	border: 1px solid #FFFFFF;
+	margin-bottom: 30px;
+	}
+	.card{margin-bottom: 30px} 
+</style>	
+</head>	<!--CSS um espaco entre os cards no bottom-->
+	
+	
+<body>
+	<!--fluid pega tela inteira-->
+	<div class="container-fluid"> 
+		<div class="row">	
+			<div class="col-12">
+				<ul class="nav justify-content-center"><!--nao vale como tag nav serve para utilizar as opcoes do bootstrap--->
+					<li class="nav-item"><a href="#" class="nav-link active">LINK 1</a></li>
+					<li class="nav-item"><a href="#" class="nav-link">LINK 2</a></li>
+					<li class="nav-item"><a href="#" class="nav-link disabled">LINK 3</a></li>
+				</ul>
+			</div>
+		</div>
+		
+<!--utilizando nav ao inves de  ul, questao de uso--->		
+		<div class="row">	
+			<div class="col-12">
+				<nav class="nav justify-content-end">
+					<a href="#" class="nav-link">LINK 1</a>
+					<a href="#" class="nav-link">LINK 2</a>
+					<a href="#" class="nav-link">LINK 3</a>
+				</nav>
+			</div>
+		</div>
+
+<!--NAV na vertical--->		
+		<div class="row">	
+			<div class="col-12">
+				<nav class="nav flex-column">
+					<a href="#" class="nav-link">LINK 1</a>
+					<a href="#" class="nav-link">LINK 2</a>
+					<a href="#" class="nav-link">LINK 3</a>
+				</nav>
+			</div>
+		</div>
+<!--utilizando abas--->
+		<div class="row">	
+			<div class="col-12">
+				<nav class="nav nav-tabs">
+					<a href="#" class="nav-link">LINK 1</a>
+					<a href="#" class="nav-link">LINK 2</a>
+					<a href="#" class="nav-link">LINK 3</a>
+				</nav>
+			</div>
+		</div>
+	<br><br><br>
+<!--utilizando pills--->
+		<div class="row">	
+			<div class="col-12">
+				<nav class="nav nav-pills">
+					<a href="#" class="nav-link active">LINK 1</a>
+					<a href="#" class="nav-link">LINK 2</a>
+					<a href="#" class="nav-link">LINK 3</a>
+				</nav>
+			</div>
+		</div>		
+		
+		
+		
+	</div>
+	
+		
+<!--a sequencia importa primeiro jquery, depois popper, depois o bootstrap-->
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+<!--Javascript , $(classe modal da pagina).chamando a funcao modal(parametro)------------>
+<script>
+	
+//funcao sempre chamando modal pela classe:	$('.modal').modal('show')
+//----------------------	
+	
+</script>	
+
+</body>
+</html>

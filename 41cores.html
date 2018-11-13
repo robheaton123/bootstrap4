@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="pt-br"><!--linguagem-->
+<head>
+<meta charset="utf-8"> <!--charset cadeia de caracteres-->
+<meta name="viewport" content="width-device-width, initial-scale = 1, shrink-to-fit=no">
+<!--content= a largura vai ser igual a largura do dispositivo,intial-scale= escala de zooom inicial,shrink-to-fit = nao vai encolher em relaçao ao conteudo-->
+<title>Utilitarios - Cores</title><!---->
+<!--Instalacao via download-->
+<link rel="stylesheet" href="css/bootstrap.min.css" > 
+<!--style para css-->
+
+<!------.borderT= usar !important bootstrap precisa para borda---->	
+<style type="text/css"> 
+	.row{
+		margin-bottom: 10px;
+	}
+	.col-2{
+		padding: 50px;
+		margin-right: 5px;
+		
+	}
+	body{
+		background-color: darkslateblue;
+		margin-top: 30px;
+		border: 10px solid;
+	}
+	.borderT{
+		border-width: 8px !important;
+	}
+	
+</style>	
+</head>	<!--CSS um espaco entre os cards no bottom-->
+	
+	
+<body>
+	<!--fluid pega tela inteira-->
+	<div class="container-fluid"> 
+		<div class="row">
+			<div class="col-12">
+				<p class="text-primary">Texto para exibição de cores - Primary</p>
+				<p class="text-secondary">Texto para exibição de cores - Secondary</p>
+				<p class="text-success">Texto para exibição de cores - Success</p>
+				<p class="text-danger">Texto para exibição de cores - Danger</p>
+				<p class="text-warning">Texto para exibição de cores - Warning</p>
+				<p class="text-info">Texto para exibição de cores - Info</p>
+				<p class="text-light">Texto para exibição de cores - Light</p>
+				<p class="text-dark">Texto para exibição de cores - Dark</p>
+				
+			</div>
+		</div>
+		
+		<div class="row">
+			<div class="col-12">
+				<p><a href="#" class="text-primary">Texto para exibição de cores - Primary</a></p>
+				<p><a href="#" class="text-secondary">Texto para exibição de cores - Secondary</a></p>
+				<p><a href="#" class="text-success">Texto para exibição de cores - Success</a></p>
+				<p><a href="#" class="text-danger">Texto para exibição de cores - Danger</a></p>
+				<p><a href="#" class="text-warning">Texto para exibição de cores - Warning</a></p>
+				<p><a href="#" class="text-info">Texto para exibição de cores - Info</a></p>
+				<p><a href="#" class="text-light">Texto para exibição de cores - Light</a></p>
+				<p><a href="#" class="text-dark">Texto para exibição de cores - Dark</a></p>
+				
+			</div>
+		</div>
+		
+		<div class="row">
+			<div class="col-12">
+	<!---padding-3, margin-bottom-2  -->			
+				<div class="p-3 mb-2 bg-primary"></div>
+				<div class="p-3 mb-2 bg-secondary"></div>
+				<div class="p-3 mb-2 bg-success"></div>
+				<div class="p-3 mb-2 bg-danger"></div>
+				<div class="p-3 mb-2 bg-warning"></div>
+				<div class="p-3 mb-2 bg-light"></div>
+				<div class="p-3 mb-2 bg-dark"></div>
+				<div class="p-3 mb-2 bg-white"></div>
+			</div>
+		</div>
+	</div>
+	
+
+	
+		
+<!--a sequencia importa primeiro jquery, depois popper, depois o bootstrap-->
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+<!--Javascript , $(classe da pagina).chamando a funcao ------------>
+
+<!---	
+<script>
+	$(function(){
+		$('[data-toggle="tooltip"]').tooltip()
+
+	});
+	
+</script>	------------>
+
+</body>
+</html>

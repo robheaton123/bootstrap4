@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="pt-br"><!--linguagem-->
+<head>
+<meta charset="utf-8"> <!--charset cadeia de caracteres-->
+<meta name="viewport" content="width-device-width, initial-scale = 1, shrink-to-fit=no">
+<!--content= a largura vai ser igual a largura do dispositivo,intial-scale= escala de zooom inicial,shrink-to-fit = nao vai encolher em relaçao ao conteudo-->
+<title>Barra Navegacao Parte 1</title><!---->
+<!--Instalacao via download-->
+<link rel="stylesheet" href="css/bootstrap.min.css" > 
+<!--style para css-->	
+<style type="text/css"> 
+
+	div.mr{
+	background-color:#FFFFFF;	
+	height: auto;	
+	border: 1px solid #FFFFFF;
+	margin-bottom: 30px;
+	}
+	.card{margin-bottom: 30px} 
+</style>	
+</head>	<!--CSS um espaco entre os cards no bottom-->
+	
+	
+<body>
+	<!--fluid pega tela inteira-->
+	<div class="container-fluid"> 
+		<div class="row">
+			<div class="col-12">
+				<nav class="navbar navbar-light bg-danger navbar-expand-lg"><!--navbar-expand-lg= so vai aparecer o botao quando reduzir o viewport--->			
+		<!----brand marca---->			
+					<a class="navbar-brand" href="#"> <!---alinhando icone ao lado no topo(d-inline-block align-top)---->
+					<img src="imagens/zip.png" width="30" height="30" class="d-inline-block align-top">	Navbar</a>
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav1" aria-controls="nav1" aria-expanded="false" aria-label="navegacao toggle"><!--data-target=alvo para abrir id="nav1"--->
+					<span class="navbar-toggler-icon"></span><!--icone do boao-->
+					</button>				<!--justificando conteudo para o input de pesquisa não ficar colado-->
+					<div class="collapse navbar-collapse justify-content-between" id="nav1">
+						<ul class="navbar-nav">
+							<li class="nav-item">
+								<a href="#" class="nav-link">Home</a>
+							</li>
+							<li class="nav-item">
+								<a href="#" class="nav-link">Clientes</a>
+							</li>
+							<li class="nav-item">
+								<a href="#" class="nav-link">Portifolio</a>
+							</li>
+			<!-------um drodpdown menu dentro do link Blog-->				
+							<li class="nav-item dropdown">
+								<a class="nav-link dropdown-toggle" href="#" id="linkDrop" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Blog</a>
+								<div class="dropdown-menu" aria-labelledby="linkDrop">
+									<a href="#" class="dropdown-item">Novidades</a>
+									<a href="#" class="dropdown-item">Tecnologia</a>
+									<a href="#" class="dropdown-item">Lançamentos</a>
+								</div>
+							</li>
+							<li class="nav-item">
+								<a href="#" class="nav-link">Contato</a>
+							</li>
+						
+						</ul>
+						<form class="form-inline"><!--input de busca-->
+							<input class="form-control mr-sm-2" type="text" placeholder="Pesquisar..." aria-label="pesquisar">
+							<button class="btn btn-outline-dark my-2 my-sm-0" type="submit">Buscar</button>
+						
+						</form>
+					
+					
+					</div>
+				</nav>
+			</div>	 
+		</div>
+	</div>
+	
+		
+<!--a sequencia importa primeiro jquery, depois popper, depois o bootstrap-->
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+<!--Javascript , $(classe modal da pagina).chamando a funcao modal(parametro)------------>
+<script>
+	
+//funcao sempre chamando modal pela classe:	$('.modal').modal('show')
+//----------------------	
+	
+</script>	
+
+</body>
+</html>

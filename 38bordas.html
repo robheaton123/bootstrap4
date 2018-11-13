@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="pt-br"><!--linguagem-->
+<head>
+<meta charset="utf-8"> <!--charset cadeia de caracteres-->
+<meta name="viewport" content="width-device-width, initial-scale = 1, shrink-to-fit=no">
+<!--content= a largura vai ser igual a largura do dispositivo,intial-scale= escala de zooom inicial,shrink-to-fit = nao vai encolher em relaçao ao conteudo-->
+<title>Utilitarios - Bordas</title><!---->
+<!--Instalacao via download-->
+<link rel="stylesheet" href="css/bootstrap.min.css" > 
+<!--style para css-->
+
+<!------.borderT= usar !important bootstrap precisa para borda---->	
+<style type="text/css"> 
+	.row{
+		margin-bottom: 10px;
+	}
+	.col-2{
+		padding: 50px;
+		margin-right: 5px;
+		
+	}
+	body{
+		background-color: darkslateblue;
+		margin-top: 30px;
+		border: 10px solid;
+	}
+	.borderT{
+		border-width: 8px !important;
+	}
+	
+</style>	
+</head>	<!--CSS um espaco entre os cards no bottom-->
+	
+	
+<body>
+	<!--fluid pega tela inteira-->
+	<div class="container-fluid"> 
+		<div class="row">
+			<div class="col-2 border borderT">
+				 
+					
+			</div>
+			<div class="col-2 border border-0">
+				 
+					
+			</div>
+			<div class="col-2 border border-top-0">
+				 
+					
+			</div>
+		</div>
+		
+		<div class="row">
+			<div class="col-2 border border-right-0">
+				 
+					
+			</div>
+			<div class="col-2 border border-bottom-0">
+				 
+					
+			</div>
+			<div class="col-2 border border-left-0">
+				 
+					
+			</div>
+		</div>
+		
+		<div class="row">
+			<div class="col-2 border border-primary">
+				 
+					
+			</div>
+			<div class="col-2 border border-secondary">
+				 
+					
+			</div>
+			<div class="col-2 border border-success">
+				 
+					
+			</div>
+		</div>
+		
+		<div class="row">
+			<div class="col-2 border border-danger">
+				 
+					
+			</div>
+			<div class="col-2 border border-warning borderT">
+				 
+					
+			</div>
+			<div class="col-2 border border-info">
+				 
+					
+			</div>
+		</div>
+	</div>
+	
+	
+	<div class="container-fluid">
+		<div class="row">
+				<div class="col-2 border border-primary rounded">
+
+
+				</div>
+				<div class="col-2 border border-secondary rounded-top">
+
+
+				</div>
+				<div class="col-2 border border-success rounded-right">
+
+
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-2 border border-danger rounded-bottom">
+
+
+				</div>
+				<div class="col-2 border border-warning rounded-left">
+
+
+				</div>
+				<div class="col-2 border border-info rounded-circle">
+
+
+				</div>
+			</div>
+	
+	</div>
+	
+		
+<!--a sequencia importa primeiro jquery, depois popper, depois o bootstrap-->
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+<!--Javascript , $(classe da pagina).chamando a funcao ------------>
+
+<!---	
+<script>
+	$(function(){
+		$('[data-toggle="tooltip"]').tooltip()
+
+	});
+	
+</script>	------------>
+
+</body>
+</html>

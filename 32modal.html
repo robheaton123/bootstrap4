@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="pt-br"><!--linguagem-->
+<head>
+<meta charset="utf-8"> <!--charset cadeia de caracteres-->
+<meta name="viewport" content="width-device-width, initial-scale = 1, shrink-to-fit=no">
+<!--content= a largura vai ser igual a largura do dispositivo,intial-scale= escala de zooom inicial,shrink-to-fit = nao vai encolher em relaçao ao conteudo-->
+<title>Modal</title><!---->
+<!--Instalacao via download-->
+<link rel="stylesheet" href="css/bootstrap.min.css" > 
+<!--style para css-->	
+<style type="text/css"> 
+	div.bg{
+	background-color:#FFFFFF;	
+	height: auto;	
+	border: 1px solid #000000;
+	padding: 10px 0;
+	}
+	div.mr{
+	background-color:#FFFFFF;	
+	height: auto;	
+	border: 1px solid #FFFFFF;
+	margin-bottom: 30px;
+	}
+	.card{margin-bottom: 30px} 
+</style>	
+</head>	<!--CSS um espaco entre os cards no bottom-->
+	
+	
+<body>
+	<!--fluid pega tela inteira-->
+	<div class="container-fluid"> 
+		<div class="row">	
+			<div class="col-12">
+	<!--botao disparador do modal, data-target apontando a id do modal---->
+				<button class="btn btn-primary" data-toggle="modal" data-target="#modalExemplo1">Disparador do Modal</button>
+				<!----------MODAL-------->
+				<div id="modalExemplo1" class="modal fade"><!---fade=abertura suave--->
+					<div class="modal-dialog" role="document">
+						<div class="modal-content">
+							<div class="modal-header">
+								<h5 class="modal-title">Titulo do meu Modal</h5>
+								<button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+									<span aria-hidden="true">&times;</span>  <!--------data - dismiss fechar modal------------>
+								</button>
+							
+							</div>
+							<div class="modal-body">
+								<p>Corpo do meu Modal</p>
+							
+							</div>
+							<div class="modal-footer">
+								<button type="button" class="btn btn-primary">Salvar Alterações</button>
+								<button type="button" class="btn btn-danger" data-dismiss="modal">Cancelar</button>
+							
+							</div>
+						</div>
+					</div>
+				</div>	
+			</div>	
+		</div>	
+			
+			<div class="row">	
+			<div class="col-12">
+	<!--botao disparador do modal, data-target apontando a id do modal---->
+				<button class="btn btn-primary" data-toggle="modal" data-target="#modalExemplo2">Disparador do Modal LG</button>
+				<!----------MODAL-------->
+				<div id="modalExemplo2" class="modal fade"><!---fade=abertura suave--->
+					<div class="modal-dialog modal-lg" role="document">
+						<div class="modal-content">
+							<div class="modal-header">
+								<h5 class="modal-title">Titulo do meu Modal</h5>
+								<button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+									<span aria-hidden="true">&times;</span>  <!--------data - dismiss fechar modal------------>
+								</button>
+							
+							</div>
+							<div class="modal-body">
+								<p>Corpo do meu Modal</p>
+							
+							</div>
+							<div class="modal-footer">
+								<button type="button" class="btn btn-primary">Salvar Alterações</button>
+								<button type="button" class="btn btn-danger" data-dismiss="modal">Cancelar</button>
+							
+							</div>
+						</div>
+					</div>
+				</div>	
+			</div>
+				
+				
+			<div class="row">	
+			<div class="col-12">
+	<!--botao disparador do modal, data-target apontando a id do modal---->
+				<button class="btn btn-primary" data-toggle="modal" data-target="#modalExemplo3">Disparador do Modal SM</button>
+				<!----------MODAL-------->
+				<div id="modalExemplo3" class="modal fade"><!---fade=abertura suave--->
+					<div class="modal-dialog modal-sm" role="document">
+						<div class="modal-content">
+							<div class="modal-header">
+								<h5 class="modal-title">Titulo do meu Modal</h5>
+								<button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+									<span aria-hidden="true">&times;</span>  <!--------data - dismiss fechar modal------------>
+								</button>
+							
+							</div>
+							<div class="modal-body">
+								<p>Corpo do meu Modal</p>
+							
+							</div>
+							<div class="modal-footer">
+								<button type="button" class="btn btn-primary">Salvar Alterações</button>
+								<button type="button" class="btn btn-danger" data-dismiss="modal">Cancelar</button>
+							
+							</div>
+						</div>
+					</div>
+				</div>	
+			</div>	
+				</div>	
+		
+		</div>
+	</div>
+		
+	
+	
+		
+<!--a sequencia importa primeiro jquery, depois popper, depois o bootstrap-->
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+<!--Javascript , $(classe modal da pagina).chamando a funcao modal(parametro)------------>
+<script>
+	
+//funcao sempre chamando modal pela classe:	$('.modal').modal('show')
+//----------------------	
+	
+</script>	
+
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="pt-br"><!--linguagem-->
+<head>
+<meta charset="utf-8"> <!--charset cadeia de caracteres-->
+<meta name="viewport" content="width-device-width, initial-scale = 1, shrink-to-fit=no">
+<!--content= a largura vai ser igual a largura do dispositivo,intial-scale= escala de zooom inicial,shrink-to-fit = nao vai encolher em relaçao ao conteudo-->
+<title>Utilitarios - Dimensionamento</title><!---->
+<!--Instalacao via download-->
+<link rel="stylesheet" href="css/bootstrap.min.css" > 
+<!--style para css-->
+
+<!------.borderT= usar !important bootstrap precisa para borda---->	
+<style type="text/css"> 
+	.row{
+		margin-bottom: 10px;
+	}
+	.col-2{
+		padding: 50px;
+		margin-right: 5px;
+		
+	}
+	body{
+		background-color: darkslateblue;
+		margin-top: 30px;
+		border: 10px solid;
+	}
+	.borderT{
+		border-width: 8px !important;
+	}
+	
+</style>	
+</head>	<!--CSS um espaco entre os cards no bottom-->
+
+	
+<body>
+	<!--fluid pega tela inteira-->
+	<div class="container-fluid"> 
+		<div class="row">
+			<div class="col">
+	<!--w-25 = width 25% do tamanho da col-->			
+				<div class="p-3 mb-2 w-25 bg-primary"></div>
+				<div class="p-3 mb-2 w-50 bg-secondary"></div>
+				<div class="p-3 mb-2 w-75 bg-success"></div>
+				<div class="p-3 mb-2 w-100 bg-danger"></div>
+			</div>
+		</div>
+		
+		<div class="row">
+			<div class="col bg-warning" style="height: 300px;">
+	<!--mw-100= max width(pode usar height) que um elemento vai chegar,  d-inline-block = mostra em linha um ao lado do outro-->			
+				<div class="p-3 mb-2 h-25 d-inline-block bg-primary"></div>
+				<div class="p-3 mb-2 h-50 d-inline-block bg-secondary"></div>
+				<div class="p-3 mb-2 h-75 d-inline-block bg-success"></div>
+				<div class="p-3 mb-2 h-100 d-inline-block bg-danger"></div>
+			</div>
+		</div>
+	</div>
+	
+
+	
+		
+<!--a sequencia importa primeiro jquery, depois popper, depois o bootstrap-->
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+<!--Javascript , $(classe da pagina).chamando a funcao ------------>
+
+<!---	
+<script>
+	$(function(){
+		$('[data-toggle="tooltip"]').tooltip()
+
+	});
+	
+</script>	------------>
+
+</body>
+</html>

@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="pt-br"><!--linguagem-->
+<head>
+<meta charset="utf-8"> <!--charset cadeia de caracteres-->
+<meta name="viewport" content="width-device-width, initial-scale = 1, shrink-to-fit=no">
+<!--content= a largura vai ser igual a largura do dispositivo,intial-scale= escala de zooom inicial,shrink-to-fit = nao vai encolher em relaçao ao conteudo-->
+<title>Utilitarios - Espaçamento</title><!---->
+<!--Instalacao via download-->
+<link rel="stylesheet" href="css/bootstrap.min.css" > 
+<!--style para css-->
+
+<!------.borderT= usar !important bootstrap precisa para borda---->	
+<style type="text/css"> 
+	.row{
+		margin-bottom: 10px;
+	}
+	.col-2{
+		padding: 50px;
+		margin-right: 5px;
+		
+	}
+	body{
+		background-color: darkslateblue;
+		margin-top: 30px;
+		border: 10px solid;
+	}
+	.borderT{
+		border-width: 8px !important;
+	}
+	
+</style>	
+</head>	<!--CSS um espaco entre os cards no bottom-->
+
+	
+<body>
+	<!--fluid pega tela inteira-->
+	<div class="container-fluid"> 
+		<div class="row">
+<!--p-1=Padding 1-->			
+			<div class="col p-0 bg-primary">
+				
+			</div>	
+			
+			<div class="col p-1 bg-primary">
+				
+			</div>
+			
+			<div class="col p-3 bg-primary">
+				
+			</div>
+			
+			<div class="col p-5 bg-primary">
+				
+			</div>
+		</div>
+<!---m-1=Margin 1--->		
+		<div class="row">
+			<div class="col p-3 m-0 bg-primary">
+				
+			</div>	
+			
+			<div class="col p-3 m-1 bg-primary">
+				
+			</div>
+			
+			<div class="col p-3 m-3 bg-primary">
+				
+			</div>
+			
+			<div class="col p-3 m-5 bg-primary">
+				
+			</div>
+		</div>
+		
+		<div class="row">
+			<div class="col p-3 mt-3 bg-primary">
+				
+			</div>	
+			
+			<div class="col p-3 mb-3 bg-primary">
+				
+			</div>
+	<!---margin esquerda-->		
+			<div class="col p-3 ml-3 bg-primary">
+				
+			</div>
+	<!--margin direita-->		
+			<div class="col p-3 mr-3 bg-primary">
+				
+			</div>
+	<!--margin esquerda e direita-->		
+			<div class="col p-3 mx-3 bg-primary">
+				
+			</div>
+	<!--margin top e rodape-->		
+			<div class="col p-3 my-3 bg-primary">
+				
+			</div>
+	
+		</div>
+		
+		<!--executar um elemento centralizado usar = mx-auto -->		
+		<div class="row">
+			<div class="col-3 p-3 mt-3 mx-auto bg-primary">
+			
+			</div>
+			
+		</div>
+	</div>
+	
+
+	
+		
+<!--a sequencia importa primeiro jquery, depois popper, depois o bootstrap-->
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+<!--Javascript , $(classe da pagina).chamando a funcao ------------>
+
+<!---	
+<script>
+	$(function(){
+		$('[data-toggle="tooltip"]').tooltip()
+
+	});
+	
+</script>	------------>
+
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="pt-br"><!--linguagem-->
+<head>
+<meta charset="utf-8"> <!--charset cadeia de caracteres-->
+<meta name="viewport" content="width-device-width, initial-scale = 1, shrink-to-fit=no">
+<!--content= a largura vai ser igual a largura do dispositivo,intial-scale= escala de zooom inicial,shrink-to-fit = nao vai encolher em relaçao ao conteudo-->
+<title>Utilitarios - Float</title><!---->
+<!--Instalacao via download-->
+<link rel="stylesheet" href="css/bootstrap.min.css" > 
+<!--style para css-->
+
+<!------.borderT= usar !important bootstrap precisa para borda---->	
+<style type="text/css"> 
+	.row{
+		margin-bottom: 10px;
+	}
+	.col-2{
+		padding: 50px;
+		margin-right: 5px;
+		
+	}
+	body{
+		background-color: darkslateblue;
+		margin-top: 30px;
+		border: 10px solid;
+	}
+	.borderT{
+		border-width: 8px !important;
+	}
+	
+</style>	
+</head>	<!--CSS um espaco entre os cards no bottom-->
+<!--retirar witdh e height colocar class embed-responsive-item para ficar responsivo--->
+<!----<iframe width="560" height="315" src="https://www.youtube.com/embed/KWHP6axlwlU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>----->	
+	
+	
+<body>
+	<!--fluid pega tela inteira-->
+	<div class="container-fluid"> 
+		<div class="row">
+			<div class="col">
+				
+				<div class="float-left">Float left on all viewport sizes</div><br>
+				<div class="float-right">Float right on all viewport sizes</div><br>
+				<div class="float-none">Don't float on all viewport sizes</div>
+				
+				<hr>
+				
+				<div class="float-sm-left">Float left on viewports sized SM (small) or wider</div><br>
+				<div class="float-md-right">Float right on viewports sized MD (medium) or wider</div><br>
+				<div class="float-lg-left">Float left on viewports sized LG (large) or wider</div><br>
+				<div class="float-xl-left">Float left on viewports sized XL (extra-large) or wider</div><br>
+				
+				
+				
+			</div>
+		</div>
+	</div>
+	
+
+	
+		
+<!--a sequencia importa primeiro jquery, depois popper, depois o bootstrap-->
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+<!--Javascript , $(classe da pagina).chamando a funcao ------------>
+
+<!---	
+<script>
+	$(function(){
+		$('[data-toggle="tooltip"]').tooltip()
+
+	});
+	
+</script>	------------>
+
+</body>
+</html>
