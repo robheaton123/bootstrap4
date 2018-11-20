@@ -1,0 +1,11 @@
+(function($){
+ 	"use strict";
+ 	/* Inicializar nosso contador */
+ 	$('.contar').counterUp({
+		time: 1000,
+		delay: 10
+	});
+})(jQuery);
+
+
+/* tudo da classe .contar recebe .counterUp(conf adicionais) */

@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width-device-width, initial-scale = 1, shrink-to-fit=no">	
-<title>Template Master</title>  <!--template master-->
+<title>Template Master - Cards</title>  <!--template master-->
 	
 <!--Instalacao via download-->
 <link rel="stylesheet" type="text/css" href="bibliotecas/bootstrap/css/bootstrap.min.css" >
@@ -243,21 +243,106 @@
 					<a href="index.html">Home</a>
 				</li>
 				<li class="breadcrumb-item">
-					Página em Branco
+					Cards
 				</li>
 			</ol>
 			<div class="row">
 				<div class="col-12">
-					<h1>Titulo da página</h1>
-					<p>Tenho um form que ao abrir ele faz uma consulta de acordo com o código do usuário que fez o login. Coloquei uma Query no datamodule, e ativei esse form na query. O problema é o seguinte: Se eu deixar a propriedade SQL da Query vazia (para incluir a consulta via programação), a aplicação retorna um erro (dizendo que a SQL é necessária). E eu não sei colocar dentro dessa query uma consulta utilizando variáveis, tipo:
-
-					SELECT * FROM CADASTROS WHERE COD_USUARIO = ´Codigo´
-
-					Se fosse:
-					SELECT * FROM CADASTROS WHERE COD_USUARIO = 1
-
-					Ai não tinha o que fazer, mas no caso dessa variavel ´codigo´...[color=darkblue:f0ce289bc2][/color:f0ce289bc2]</p>
+					<h1>Cards</h1>
+					
 				</div>
+			</div>
+			
+			<div class="row"> <!--row dos cards-->
+				<!--card primary-->
+					<div class="col-xl-3 col-sm-6 mb-3"><!--DEFININDO TAMANHO DA COL DEACORDO COM O VIEWPORT, margin-bottmm-3-->
+						<div class="card text-white bg-primary o-hidden h-100"><!--card-->
+							<div class="card-body"><!--corpo do card-->
+								<div class="card-body-icon">
+									<i class="fa fa-fw fa-comments"></i>
+									</div>
+									<div class="mr-5">30 novas mensagens <!--margin-right-5-->
+									</div>
+							</div>
+		<!--Ver Detalhes do card-->					
+							<a href="#" class="card-footer text-white clearfix small z-1">
+								<span class="float-left">Ver Detalhes</span>
+								<span class="float-right">
+									<i class="fa fa-angle-right"></i>
+								</span>
+							</a>
+						</div>
+					</div>
+				
+			
+			<!---card warning-->
+					<div class="col-xl-3 col-sm-6 mb-3"><!--DEFININDO TAMANHO DA COL DEACORDO COM O VIEWPORT, margin-bottmm-3-->
+						<div class="card text-white bg-warning o-hidden h-100"><!--card-->
+							<div class="card-body"><!--corpo do card-->
+								<div class="card-body-icon">
+									<i class="fa fa-fw fa-list"></i>
+									</div>
+									<div class="mr-5">10 novas tarefas <!--margin-right-5-->
+									</div>
+							</div>
+		<!--Ver Detalhes do card-->					
+							<a href="#" class="card-footer text-white clearfix small z-1">
+								<span class="float-left">Ver Detalhes</span>
+								<span class="float-right">
+									<i class="fa fa-angle-right"></i>
+								</span>
+							</a>
+						</div>
+					</div>
+				
+			
+			<!--card success-->
+					<div class="col-xl-3 col-sm-6 mb-3"><!--DEFININDO TAMANHO DA COL DEACORDO COM O VIEWPORT, margin-bottmm-3-->
+						<div class="card text-white bg-success o-hidden h-100"><!--card-->
+							<div class="card-body"><!--corpo do card-->
+								<div class="card-body-icon">
+									<i class="fa fa-fw fa-shopping-cart"></i>
+									</div>
+									<div class="mr-5">220 novas Vendas <!--margin-right-5-->
+									</div>
+							</div>
+		<!--Ver Detalhes do card-->					
+							<a href="#" class="card-footer text-white clearfix small z-1">
+								<span class="float-left">Ver Detalhes</span>
+								<span class="float-right">
+									<i class="fa fa-angle-right"></i>
+								</span>
+							</a>
+						</div>
+					</div>
+				
+			
+			<!-- card danger-->
+					<div class="col-xl-3 col-sm-6 mb-3"><!--DEFININDO TAMANHO DA COL DEACORDO COM O VIEWPORT, margin-bottmm-3-->
+						<div class="card text-white bg-danger o-hidden h-100"><!--card-->
+							<div class="card-body"><!--corpo do card-->
+								<div class="card-body-icon">
+									<i class="fa fa-fw fa-support p"></i>
+									</div>
+									<div class="mr-5">20 novos tickets <!--margin-right-5-->
+									</div>
+							</div>
+		<!--Ver Detalhes do card-->					
+							<a href="#" class="card-footer text-white clearfix small z-1">
+								<span class="float-left">Ver Detalhes</span>
+								<span class="float-right">
+									<i class="fa fa-angle-right"></i>
+								</span>
+							</a>
+						</div>
+					</div>
+				
+			</div><!--fim da row cards-->
+			
+			
+			
+			
+			
 			</div>
 		</div>
 		
@@ -267,7 +352,7 @@
 				<small>Copyright Robheaton 2018</small>
 			</div>
 		</footer>
-	</div>
+	
 	
 	
 	
