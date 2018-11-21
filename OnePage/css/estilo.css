@@ -120,7 +120,7 @@
 	z-index: 1;
 	border-radius: 30px;
 }
-/* -moz e -webkit para funcionar o IE e Firefox */
+/* secao cursos /// -moz e -webkit para funcionar o IE e Firefox */
 .btn-preco:hover{
 	color: #fff;
 	background: #4c465f;
@@ -129,7 +129,35 @@
 	-moz-transition: all .50s ease-in-out;
 	-webkit-transition: all .50s ease-in-out;
 }
+/*Rodapé*/
+.bg-rodape1{
+	background-color: #312b45;
+}
 
+.bg-rodape1 ul li{
+	list-style: none;
+}
+/*iniciando o padding da ul em .bg-rodape1 para 0*/
+.bg-rodape1 ul{
+	-webkit-padding-start:0;
+	-moz-padding-start:0;
+}
+
+.bg-card-rodape{
+	background-color: #ff3859;
+}
+
+.icon-banner-rodape{
+	color: #c42841;
+}
+
+.bg-rodape2{
+	background-color: #4c465f;
+}
+
+a.icone-social{
+	color: #b3aec2;
+}
 
 /* configuracoes gerais */
 .underline{
@@ -139,6 +167,15 @@
 	display: block;
 	margin-bottom: 8px;
 	margin: 0 auto;
+}
+
+.underline-footer{
+	content: '';
+	border-top: 2px solid #ff3859;
+	width: 70px;
+	display: block;
+	margin-top: 5px;
+	
 }
 
 /* efeito de sombra leve nas divs parceiro */
